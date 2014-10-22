@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Coming+Soon);
+
+body {
+	background: url('http://www.jardinminuevomundo.com/images/fondo3.jpg') center top no-repeat;
+	font-family: 'Coming Soon', cursive;
+}
+.well {
+	border-color: #8BC53F;
+	background: white;
+}
+.btn-primary {
+	color: white;
+	background-color: #8BC53F;	
+	border-color: #8BC53F;
+	font-weight: bold;
+}
+.btn-primary a, .btn-primary a:hover {
+	color: white;
+	text-decoration: none;
+}
+.btn-primary:hover {
+	background-color: #38C3CA;	
+	border-color: #38C3CA;
+}
+.btn {
+	box-shadow: 2px 2px 2px gray;
+	font-size: 1.2em;
+}
+.btn-exit {
+	float: right;
+}
+label {
+	width: 100%;
+}
+.form-date {
+	width: 28%;
+	display: inline;
+	margin-left: 2%;
+	margin-right: 2%;
+}

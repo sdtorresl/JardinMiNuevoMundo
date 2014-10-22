@@ -1,0 +1,10 @@
+DELETE FROM `MiNuevoMundo`.`courses`;
+ALTER TABLE  `MiNuevoMundo`.`courses` AUTO_INCREMENT=1;
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Párvulos',  '2014');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Pre-Jardín',  '2014');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Jardín',  '2014');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Transición',  '2014');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Párvulos',  '2015');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Pre-Jardín',  '2015');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Jardín',  '2015');
+INSERT INTO  `MiNuevoMundo`.`courses` (`id` ,`name` ,`year`) VALUES (NULL ,  'Transición',  '2015');

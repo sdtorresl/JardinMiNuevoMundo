@@ -1,0 +1,669 @@
+2014-10-18 20:16:34 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/admin
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-18 20:16:47 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/admin/users
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-18 20:16:51 Error: [MissingControllerException] Controller class UserController could not be found.
+Exception Attributes: array (
+  'class' => 'UserController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/user
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-18 20:16:53 Error: Fatal Error (4): syntax error, unexpected '.', expecting '(' in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 110]
+2014-10-18 20:16:53 Error: [FatalErrorException] syntax error, unexpected '.', expecting '('
+Request URL: /MiNuevoMundo/users
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 110)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 110, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 110, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-18 20:17:53 Error: Fatal Error (4): syntax error, unexpected '.', expecting '(' in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 110]
+2014-10-18 20:17:53 Error: [FatalErrorException] syntax error, unexpected '.', expecting '('
+Request URL: /MiNuevoMundo/users/view
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 110)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 110, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 110, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-18 20:18:47 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-18 20:18:55 Error: [MissingViewException] View file "/var/www/MiNuevoMundo/app/View/Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/MiNuevoMundo/app/View/Users/index.ctp',
+)
+Request URL: /MiNuevoMundo/users/
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-18 20:19:07 Error: [MissingViewException] View file "/var/www/MiNuevoMundo/app/View/Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/MiNuevoMundo/app/View/Users/add.ctp',
+)
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-18 20:27:17 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 55]
+2014-10-18 20:27:17 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 55, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 55, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-18 20:28:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`MiNuevoMundo`.`users`, CONSTRAINT `fk_users_teachers1` FOREIGN KEY (`teacher_id`) REFERENCES `teachers` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(51): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-18 20:53:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`MiNuevoMundo`.`users`, CONSTRAINT `fk_users_students1` FOREIGN KEY (`student_id`) REFERENCES `students` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(51): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-18 20:53:47 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`MiNuevoMundo`.`users`, CONSTRAINT `fk_users_administrators1` FOREIGN KEY (`administrators_id`) REFERENCES `administrators` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(51): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-18 20:54:26 Error: Fatal Error (1): Call to a member function setFlash() on a non-object in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 52]
+2014-10-18 20:54:26 Error: [FatalErrorException] Call to a member function setFlash() on a non-object
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 52, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 52, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-18 20:56:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(51): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-18 20:59:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(51): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 13:35:33 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/delete/0
+Stack Trace:
+#0 [internal function]: UsersController->delete('0')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 13:35:52 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/delete/0
+Stack Trace:
+#0 [internal function]: UsersController->delete('0')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 15:43:20 Error: [MissingControllerException] Controller class AchievementSummariesController could not be found.
+Exception Attributes: array (
+  'class' => 'AchievementSummariesController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/achievement_summaries
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-19 15:57:50 Error: [MissingControllerException] Controller class RegistrationsController could not be found.
+Exception Attributes: array (
+  'class' => 'RegistrationsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/registrations
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-19 16:55:48 Error: Fatal Error (4): syntax error, unexpected '.', expecting '(' in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 111]
+2014-10-19 16:55:48 Error: [FatalErrorException] syntax error, unexpected '.', expecting '('
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 111, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 111, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 16:55:55 Error: Fatal Error (4): syntax error, unexpected '.', expecting '(' in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 111]
+2014-10-19 16:55:55 Error: [FatalErrorException] syntax error, unexpected '.', expecting '('
+Request URL: /MiNuevoMundo/users
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 111)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 111, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 111, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 17:10:49 Error: [MissingActionException] Action UsersController::add_student() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_student',
+)
+Request URL: /MiNuevoMundo/users/add_student
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 17:13:13 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 104]
+2014-10-19 17:13:13 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /MiNuevoMundo/users/add_student
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 104, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 104, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 17:14:03 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 106]
+2014-10-19 17:14:03 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /MiNuevoMundo/users/add_student
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 106)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 106, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 106, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 17:14:36 Error: [MissingActionException] Action UsersController::add_student() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_student',
+)
+Request URL: /MiNuevoMundo/users/add_student
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 17:20:24 Error: [MissingActionException] Action UsersController::add_student() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add_student',
+)
+Request URL: /MiNuevoMundo/users/add_student
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 17:20:34 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW in [/var/www/MiNuevoMundo/app/View/Users/add.ctp, line 9]
+2014-10-19 17:20:34 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 9)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 9, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 9, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 17:29:14 Error: [MissingViewException] View file "/var/www/MiNuevoMundo/app/View/Users/list_students.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/MiNuevoMundo/app/View/Users/list_students.ctp',
+)
+Request URL: /MiNuevoMundo/users/list_students
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 17:29:30 Error: [MissingViewException] View file "/var/www/MiNuevoMundo/app/View/Users/list_students.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/MiNuevoMundo/app/View/Users/list_students.ctp',
+)
+Request URL: /MiNuevoMundo/users/list_students
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 17:30:49 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 20:33:44 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Users/add.ctp, line 6]
+2014-10-19 20:33:44 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 6, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 6, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 20:38:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(88): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 20:40:33 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(88): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 21:00:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'nctorresl@gmail.com' for key 'email_UNIQUE'
+Request URL: /MiNuevoMundo/users/edit/1
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->edit('1')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 21:01:14 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sdtorresl' for key 'username_UNIQUE'
+Request URL: /MiNuevoMundo/users/edit/3
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->edit('3')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 21:03:19 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/edit/9
+Stack Trace:
+#0 [internal function]: UsersController->edit('9')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 21:03:31 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/edit/2
+Stack Trace:
+#0 [internal function]: UsersController->edit('2')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 21:03:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'sdtorresl' for key 'username_UNIQUE'
+Request URL: /MiNuevoMundo/users/edit/3
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->edit('3')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 21:05:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /MiNuevoMundo/users/edit/3
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('update', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('update', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('update', Array, Array)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(808): DboSource->query('update', Array, Object(User))
+#5 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): Model->__call('update', Array)
+#6 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): User->update(Array)
+#7 [internal function]: UsersController->edit('3')
+#8 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-10-19 21:08:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email_UNIQUE'
+Request URL: /MiNuevoMundo/users/edit/3
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->edit('3')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-10-19 21:44:46 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User' in 'where clause'
+Request URL: /MiNuevoMundo/users/list_teachers
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(User), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/MiNuevoMundo/app/Controller/UsersController.php(78): PaginatorComponent->paginate(Array)
+#8 [internal function]: UsersController->list_teachers()
+#9 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-19 21:53:59 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User' in 'where clause'
+Request URL: /MiNuevoMundo/users/list_teachers/sort:created/direction:asc
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(User), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/MiNuevoMundo/app/Controller/UsersController.php(79): PaginatorComponent->paginate(Array)
+#8 [internal function]: UsersController->list_teachers()
+#9 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-19 21:59:33 Error: [MissingModelException] all
+Request URL: /MiNuevoMundo/users/list_teachers/sort:created/direction:asc
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Controller/UsersController.php(78): PaginatorComponent->paginate('all', Array)
+#1 [internal function]: UsersController->list_teachers()
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-19 21:59:40 Error: [MissingModelException] all
+Request URL: /MiNuevoMundo/users/list_teachers
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Controller/UsersController.php(78): PaginatorComponent->paginate('all', Array)
+#1 [internal function]: UsersController->list_teachers()
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-19 22:08:30 Error: [MissingControllerException] Controller class PeriodPasswordsController could not be found.
+Exception Attributes: array (
+  'class' => 'PeriodPasswordsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/period_passwords/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-19 22:22:54 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/var/www/MiNuevoMundo/app/Controller/UsersController.php, line 26]
+2014-10-19 22:22:54 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /MiNuevoMundo/users
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 26, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 26, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-19 22:23:21 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /MiNuevoMundo/users/login
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 22:23:30 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /MiNuevoMundo/users/login
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 22:23:54 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /MiNuevoMundo/users/login
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 22:24:19 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /MiNuevoMundo/users/login
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-19 22:38:51 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-19 22:43:14 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/admin
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-10-20 19:05:54 Error: [MissingActionException] Action UsersController::vie() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'vie',
+)
+Request URL: /MiNuevoMundo/users/vie
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-20 20:10:45 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/MiNuevoMundo/app/Model/User.php, line 10]
+2014-10-20 20:10:45 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /MiNuevoMundo/users/login
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 10, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 10, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 21:42:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Student.user_id' in 'on clause'
+Request URL: /MiNuevoMundo/students
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Student...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Student...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Student), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(26): PaginatorComponent->paginate()
+#8 [internal function]: StudentsController->index()
+#9 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#12 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-20 21:42:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Student.user_id' in 'on clause'
+Request URL: /MiNuevoMundo/students
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Student...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Student...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Student), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('all', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Component/PaginatorComponent.php(196): Model->find('all', Array)
+#7 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(26): PaginatorComponent->paginate()
+#8 [internal function]: StudentsController->index()
+#9 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#12 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-10-20 21:55:45 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 59]
+2014-10-20 21:55:45 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 59, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 59, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-20 21:56:33 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 59]
+2014-10-20 21:56:33 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 59)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 59, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 59, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-21 19:54:38 Error: [MissingControllerException] Controller class OldController could not be found.
+Exception Attributes: array (
+  'class' => 'OldController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/old/
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

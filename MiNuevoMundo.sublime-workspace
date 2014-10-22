@@ -1,0 +1,1437 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"req",
+				"required"
+			],
+			[
+				"input",
+				"input	input - text"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"fon",
+				"font-style"
+			],
+			[
+				"la",
+				"label	<label>"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"Bre",
+				"BreakfastII"
+			],
+			[
+				"Break",
+				"BreakfastI"
+			],
+			[
+				"in",
+				"input	input - hidden"
+			],
+			[
+				"DB",
+				"DB_NAME"
+			],
+			[
+				"D",
+				"DB_NAME"
+			],
+			[
+				"P",
+				"PUBLIC_IP"
+			],
+			[
+				"DB_",
+				"DB_PASSWORD"
+			],
+			[
+				"sudo",
+				"sudo_passwordless"
+			],
+			[
+				"sshd",
+				"sshd_group"
+			],
+			[
+				"HO",
+				"HOSTNAME"
+			],
+			[
+				"f",
+				"following"
+			],
+			[
+				"hos",
+				"hosts"
+			],
+			[
+				"h",
+				"HOSTNAME"
+			],
+			[
+				"krys",
+				"Krispy"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"for",
+				"for	for … done"
+			],
+			[
+				"e",
+				"echo"
+			],
+			[
+				"corra",
+				"CORRAL"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"a",
+				"audio"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"pl",
+				"playStream"
+			],
+			[
+				"cm",
+				"cmd_play_streaming"
+			],
+			[
+				"run",
+				"run_cmd"
+			],
+			[
+				"l",
+				"lunch"
+			],
+			[
+				"mo",
+				"morning"
+			],
+			[
+				"ele",
+				"electroSwing"
+			],
+			[
+				"sw",
+				"electroSwing"
+			],
+			[
+				"de",
+				"deepHouse"
+			],
+			[
+				"ind",
+				"indieRock"
+			],
+			[
+				"ra",
+				"random"
+			],
+			[
+				"ho",
+				"house"
+			],
+			[
+				"p",
+				"pi"
+			],
+			[
+				"i",
+				"if	if … fi"
+			],
+			[
+				"st",
+				"start_new_thread"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"get",
+				"getPlaylist"
+			],
+			[
+				"ne",
+				"new"
+			],
+			[
+				"play",
+				"playlist"
+			],
+			[
+				"video",
+				"videoPlayer"
+			],
+			[
+				"vide",
+				"videoFiles"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"fig",
+				"fig	HTML - Figure"
+			],
+			[
+				"fo",
+				"for	for …"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"Font",
+				"FontAwesome"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"mor",
+				"morning"
+			],
+			[
+				"po",
+				"pop_spanish2"
+			],
+			[
+				"we",
+				"weights"
+			],
+			[
+				"pop",
+				"pop_anglo"
+			],
+			[
+				"tre",
+				"thread_finished"
+			],
+			[
+				"che",
+				"checkSoundOutput"
+			],
+			[
+				"star",
+				"start_new_thread"
+			],
+			[
+				"th",
+				"thread_finished"
+			],
+			[
+				"user",
+				"userdata"
+			],
+			[
+				"Exea",
+				"ExeaMediaPlayer"
+			],
+			[
+				"inst",
+				"installation"
+			],
+			[
+				"H",
+				"HOME"
+			],
+			[
+				"Exe",
+				"ExeaMediaPlayer"
+			],
+			[
+				"Ex",
+				"ExeaMediaPlayer"
+			],
+			[
+				"is",
+				"install"
+			],
+			[
+				"Play",
+				"PlaySoundStream"
+			],
+			[
+				"syte",
+				"System"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"NO",
+				"no-repeat"
+			],
+			[
+				"alig",
+				"text-align"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"data",
+				"dataOut"
+			],
+			[
+				"ou",
+				"out"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"o",
+				"out"
+			],
+			[
+				"log",
+				"logger"
+			],
+			[
+				"T",
+				"TARDES"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"rb",
+				"rgba	rgba()"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"up",
+				"updateMetadata"
+			],
+			[
+				"met",
+				"updateMetadata"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"http",
+				"httpGet"
+			],
+			[
+				"str",
+				"streamingURL"
+			],
+			[
+				"tr",
+				"trackInfo"
+			],
+			[
+				"htt",
+				"httpGet"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"s",
+				"scripts"
+			],
+			[
+				"stream",
+				"stream01"
+			],
+			[
+				"ca",
+				"catid"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"loa",
+				"loadResult"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"ba",
+				"background-image"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"file",
+				"filePath"
+			],
+			[
+				"fi",
+				"filePath"
+			],
+			[
+				"v",
+				"valid"
+			],
+			[
+				"Str",
+				"String"
+			],
+			[
+				"fil",
+				"filePath"
+			],
+			[
+				"Strin",
+				"String"
+			],
+			[
+				"St",
+				"String"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/View/Users/login.ctp",
+			"settings":
+			{
+				"buffer_size": 1119,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Controller/StudentsController.php",
+			"settings":
+			{
+				"buffer_size": 2744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/View/Students/add.ctp",
+			"settings":
+			{
+				"buffer_size": 5018,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/webroot/css/style.css",
+			"settings":
+			{
+				"buffer_size": 716,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"sscs",
+				"Set Syntax: CSS"
+			],
+			[
+				"ss",
+				"Set Syntax: PHP"
+			],
+			[
+				"ssb",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"cc",
+				"Convert Case: Upper Case"
+			],
+			[
+				"ssba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ssp",
+				"Set Syntax: Python"
+			],
+			[
+				"uppe",
+				"Convert Case: Upper Case"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bro",
+				"SFTP: Browse Server…"
+			],
+			[
+				"brow",
+				"SFTP: Browse Server…"
+			],
+			[
+				"c",
+				"Convert Case: Upper Case"
+			],
+			[
+				"con",
+				"Convert Case: Lower Case"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			],
+			[
+				"br",
+				"SFTP: Browse Server…"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Server…"
+			],
+			[
+				"php",
+				"Snippet: <?php … ?>"
+			],
+			[
+				"s",
+				"SFTP: Browse Server…"
+			],
+			[
+				"mo",
+				"Snippet: module"
+			],
+			[
+				"mod",
+				"Snippet: module"
+			],
+			[
+				"module",
+				"Snippet: module"
+			],
+			[
+				"sni",
+				"Snippet: Generates a unique ID."
+			],
+			[
+				"sn",
+				"Snippet: Converts &, <, >, \", and ' to characters."
+			],
+			[
+				"snip",
+				"Snippet: Checks if value is a boolean value."
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet:module",
+				"Snippet: Creates a function that, when called, invokes the method at object[key] and prepends any additional bindKey arguments to those provided to the bound function."
+			],
+			[
+				"pack",
+				"Package Control: Add Repository"
+			],
+			[
+				"ser",
+				"SFTP: Edit Server…"
+			],
+			[
+				"setu",
+				"SFTP: Setup Server…"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"htm",
+				"Snippet: html"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"bre",
+				"SFTP: Browse Server…"
+			],
+			[
+				"snipp",
+				"Snippet: if __name__ == '__main__'"
+			],
+			[
+				"ed",
+				"SFTP: Edit Server…"
+			],
+			[
+				"edit",
+				"SFTP: Edit Server…"
+			],
+			[
+				"server",
+				"SFTP: Edit Server…"
+			],
+			[
+				"setup",
+				"SFTP: Setup Server…"
+			],
+			[
+				"sf",
+				"SFTP: Browse Server…"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"sft",
+				"SFTP: Setup Server…"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"cas",
+				"Convert Case: Upper Case"
+			],
+			[
+				"she",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"hm",
+				"Set Syntax: HTML"
+			],
+			[
+				"emme",
+				"Set Syntax: Emmet"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"to",
+				"Toggle Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"emmet",
+				"Set Syntax: Emmet"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			],
+			[
+				"octa",
+				"Snippet: Octave function"
+			],
+			[
+				"for",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"snippet fo",
+				"Snippet: Octave function"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read()) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/MiNuevoMundo",
+		"/var/www/MiNuevoMundo/app",
+		"/var/www/MiNuevoMundo/app/View",
+		"/var/www/MiNuevoMundo/app/View/Students",
+		"/var/www/MiNuevoMundo/app/webroot",
+		"/var/www/MiNuevoMundo/app/webroot/css"
+	],
+	"file_history":
+	[
+		"/var/www/MiNuevoMundo/app/View/Layouts/default.ctp",
+		"/var/www/MiNuevoMundo/app/Model/Student.php",
+		"/var/www/MiNuevoMundo/app/View/Students/index.ctp",
+		"/var/www/MiNuevoMundo/app/Model/User.php",
+		"/var/www/MiNuevoMundo/app/webroot/css/style.css",
+		"/var/www/MiNuevoMundo/app/Controller/UsersController.php",
+		"/var/www/MiNuevoMundo/app/Controller/AppController.php",
+		"/var/www/MiNuevoMundo/app/View/Elements/navigation.ctp",
+		"/var/www/MiNuevoMundo/app/Config/bootstrap.php",
+		"/var/www/MiNuevoMundo/app/View/Users/login.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/edit.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/index.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/view.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/add.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/list_teachers.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/list_managers.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/list_students.ctp",
+		"/var/www/MiNuevoMundo/app/View/Users/add_manager.ctp",
+		"/var/www/MiNuevoMundo/app/Locale/default.pot",
+		"/var/www/MiNuevoMundo/app/View/Students/add.ctp",
+		"/var/www/MiNuevoMundo/app/Controller/StudentsController.php",
+		"/var/www/MiNuevoMundo/app/Config/core.php",
+		"/var/www/MiNuevoMundo/app/Config/database.php",
+		"/var/www/cakephp/app/Controller/PostsController.php",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/scripts/player.py",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/scripts/player_ecg.py",
+		"/home/sergio/Player/config.ini",
+		"/home/sergio/bd.txt",
+		"/home/sergio/Player/scripts/player.py",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/config.ini",
+		"/home/sergio/Player/sftp-config.json",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/scripts/player",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/sftp-config.json",
+		"/var/www/cakephp/app/View/Posts/edit.ctp",
+		"/var/www/cakephp/app/View/Posts/add.ctp",
+		"/var/www/cakephp/app/View/Posts/index.ctp",
+		"/var/www/cakephp/app/View/Posts/view.ctp",
+		"/var/www/cakephp/app/Config/bootstrap.php",
+		"/var/www/cakephp/app/Model/Post.php",
+		"/var/www/cakephp/app/View/Layouts/default.ctp",
+		"/var/www/cakephp/app/Config/core.php",
+		"/var/www/cakephp/app/Config/database.php",
+		"/home/sergio/Documents/Trabajo/Servidores/MySql.sh",
+		"/home/sergio/Documents/Trabajo/Servidores/mysql.sh",
+		"/home/sergio/.ssh/el04_rsa",
+		"/home/sergio/Documents/Trabajo/Servidores/CreateDataBase.sh",
+		"/home/sergio/Documents/Trabajo/Servidores/StackScript.sh",
+		"/home/sergio/Documents/Trabajo/Servidores/Security.sh",
+		"/var/www/php/index.php",
+		"/home/sergio/Documents/Trabajo/Databases/KrispyKremeCC.sql",
+		"/home/sergio/MONITOREO/script_ping.sh",
+		"/var/www/krispykreme/index.php",
+		"/var/www/krispykreme/css/main.css",
+		"/home/sergio/Downloads/MONITOREO/install.sh",
+		"/home/sergio/Documents/ceremonia tarjeta profesional",
+		"/var/www/krispykreme/sftp-config.json",
+		"/var/www/krispykream/js/main.js",
+		"/var/www/winner/index.php",
+		"/var/www/krispykream/css/main.css",
+		"/var/www/krispykream/index.php",
+		"/home/sergio/corral",
+		"/home/sergio/ip.sh",
+		"/var/www/lenosycarbon/css/main.css",
+		"/var/www/lenosycarbon/index.php",
+		"/var/www/lenosycarbon/js/main.js",
+		"/var/www/lenosycarbon/metadata.php",
+		"/var/www/lenosycarbon/sftp-config.json",
+		"/home/sergio/Documents/Credito Colsubsidio",
+		"/var/www/farmatodo/sftp-config.json",
+		"/home/sergio/Documents/Trabajo/Soporte/ping_exea.txt",
+		"/home/sergio/Documents/Trabajo/Soporte/ping_navarra.txt",
+		"/home/sergio/Documents/Trabajo/Soporte/ping_cosmos.txt",
+		"/var/www/farmatodo/css/main.css",
+		"/var/www/farmatodo/index.php",
+		"/var/www/farmatodo/js/main.js",
+		"/home/sergio/Documents/Trabajo/Player Totto/scripts/clear.py",
+		"/home/sergio/Documents/Trabajo/Player Totto/sftp-config.json",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/scripts/player.py",
+		"/home/sergio/Documents/Trabajo/Player Totto/scripts/player.py",
+		"/home/sergio/Documents/Trabajo/Player Totto/tottoradio.liq",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/scripts/player_totto.py",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/scripts/player_popsy.py",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/scripts/player_ecg.py",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/setup.sh",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/sftp-config.json",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/etc/fuse.conf",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/player.py",
+		"/home/sergio/Player_04-09-14.img",
+		"/media/548da502-ebde-45c0-9ab2-de5e2431ee0b/home/pi/ExeaInternetRadio/config.ini",
+		"/media/TOSHIBA_JHONNY/Player_04-09-14.img",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/etc/network/interfaces",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/scripts/lcd.pyc",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/logs/player.log.5",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/logs/player.log.4",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/setup.sh",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/ExeaInternetRadio/player.py",
+		"/media/TOSHIBA_JHONNY/Sistema/Windows/Documentos/Telefónica/Proyecto_jhon/Proyecto actual/Version_produccion/MENU_FINAL.sh",
+		"/media/TOSHIBA_JHONNY/Sistema/Windows/Documentos/Telefónica/Proyecto_jhon/Proyecto actual/Version_produccion/comprimirDia.sh",
+		"/media/TOSHIBA_JHONNY/Sistema/Windows/Documentos/Telefónica/Proyecto_jhon/Proyecto actual/Version_produccion/install.sh",
+		"/media/TOSHIBA_JHONNY/Sistema/Windows/Documentos/Telefónica/Proyecto_jhon/Proyecto actual/Version_produccion/login.sh",
+		"/home/sergio/Documents/Trabajo/Dirección Manolo",
+		"/home/sergio/Documents/Trabajo/Player/src/ExeaInternetRadio/scripts/player",
+		"/var/www/evideo_admin/index.php",
+		"/media/548da502-ebde-45c0-9ab2-de5e2431ee0b/etc/network/interfaces",
+		"/var/www/CodeIgniter_2.2.0/application/.htaccess",
+		"/var/www/exea_video/js/jquery.jcoverflip.js",
+		"/var/www/exea_video/css/normalize.css",
+		"/var/www/exea_video/index.html",
+		"/tmp/sublime-sftp-browse-1409147887/ema05/etc/liquidsoap/winner.liq",
+		"/home/sergio/Documents/Trabajo/ARL",
+		"/home/sergio/.config/sublime-text-3/Packages/User/sftp_servers/ema05",
+		"/home/sergio/Documents/Tareas Kokoriko",
+		"/var/www/winner/sftp-config.json",
+		"/var/www/winner/css/main.css",
+		"/var/www/winner/js/main.js",
+		"/home/sergio/Programming/Java/commander/Talk.java",
+		"/home/sergio/Programming/Java/Commander.java",
+		"/home/sergio/ExeaMediaPlayer/sftp-config.json",
+		"/media/fc254b57-8fff-4f96-9609-ea202d871acf/home/pi/ExeaInternetRadio/scripts/player.py",
+		"/media/fc254b57-8fff-4f96-9609-ea202d871acf/home/pi/ExeaInternetRadio/scripts/player",
+		"/media/fc254b57-8fff-4f96-9609-ea202d871acf/home/pi/ExeaInternetRadio/setup.sh",
+		"/home/sergio/ExeaMediaPlayer/INSTALL.txt",
+		"/home/sergio/ExeaMediaPlayer/scripts/setup.sh",
+		"/media/5d18be51-3217-4679-9c72-a54e0fc53d6b/home/pi/setup.sh",
+		"/home/sergio/ExeaMediaPlayer/scripts/player.py",
+		"/home/sergio/ExeaMediaPlayer/scripts/sftp-config.json",
+		"/home/sergio/ExeaMediaPlayer/scripts/syncfiles.sh",
+		"/home/sergio/ExeaMediaPlayer/setup.sh"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/sergio/Programming/Joomla/bootsrap template",
+			"/home/sergio/Programming/Joomla/players/com_exeaplayer"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"www.minuevomundo.com/admin/",
+			"www.minuevomundo.com/admin/users",
+			"run_cmd",
+			"debu",
+			"db_user_password",
+			"DB_USER_password",
+			"db_user",
+			"db_name",
+			"db_password",
+			"example_user",
+			"archivo",
+			"nombre",
+			"hora",
+			"fecha",
+			"Kream",
+			"Totto",
+			"opac",
+			"Popsy",
+			"http://stream.exeamedia.com/popsy.mp3",
+			"audio",
+			"span",
+			"#004062",
+			"pacificrubiales",
+			"Pacific Rubiales",
+			"deepHouse, ",
+			"player",
+			"width=\"250px\" ",
+			"color",
+			"width=\"200px\"",
+			"blue",
+			"getFeed",
+			"video_player",
+			"red",
+			"paci",
+			"#C8153A",
+			"#004062",
+			"Emiso",
+			"mkd",
+			"lafa",
+			"fourcc",
+			"xml.sax",
+			"é",
+			"ó",
+			" ",
+			"foo",
+			"80px",
+			"LOGO",
+			"$(",
+			"playBackup",
+			"back",
+			"progress-bar",
+			"lendr",
+			"Lendr",
+			"install.php",
+			"COM_EXEAPLAYER_DESCRIPTION",
+			"COM_LENDR",
+			"http://stream02.exeamedia.com:8080/hec_players",
+			"/corralenos.mp3",
+			"1200",
+			"19200",
+			"'http://stream02.exeamedia.com:8080/corralenos.mp3'",
+			"corralenos",
+			"'http://stream02.exeamedia.com:8000/elcorralwidgetyrespaldo",
+			"ema04SAMDB_JV_INT_2",
+			"SAMDB06",
+			"png",
+			"testControl",
+			"SevenSegments",
+			"notic",
+			"testSevenSegments",
+			"get_q",
+			"get_cu",
+			"get",
+			"jp-mute",
+			"mute-hov",
+			"mute",
+			"460",
+			"#eee",
+			"jp-tit",
+			"rgb(255,34,34)",
+			"stop",
+			"main.css",
+			"stre",
+			"stream0",
+			"stre",
+			"album",
+			"aguila_audio_player_variable_get",
+			"netw",
+			"div",
+			"netw",
+			"asi",
+			"facebookShare",
+			"text-de",
+			"podc",
+			"overflow: none;",
+			"player",
+			"latestItemCon",
+			"li",
+			"latestItemBody",
+			"latestItemsContainer",
+			"\"img/",
+			"contactT",
+			"#contac",
+			"img",
+			"—",
+			"GTACTAACCGTCCGACGATGTAGCTTAATCTGCCATCCGTTATCCCGACCAAAGACCTGGCGGGGTAT--CTCA-AAGATAACATGCTGACATCGCTCCACAGACCGGTCACTNGATCTACCAGTGCGGTGGTATCGACAAGCGAACCATCGAGAAGTTCGAGAAGGTTAGTTAC-TTTCCCTTCGATCGCGCGTC-CT-------TTG------CCCATCGATTCTCCATA------CGACTCGAAACGTGCCCGCTACCCCGCTCGAGACC-AAAAATTTTGCGATATGACCGTAATTTTTTT---GGTGGGGCTT-TTACCCCGCCACTCGAGCGATGCGCGTTTCTGCCCTCTCA----TTTCCACAACCT--------TC-TG-AGCGCATCGTCACGTGTTAAGCAGTCACTAACCA-TTCGACAATAGGAAGCCGCTGAGCTCGGTAAGGGTTCCTTCAAGTACGCCTGGGTTCTTGACAAGCTCAAGGCCGAGCGTGAGCGTGGTATCACCATCGATATTGCTCTCTGGAAGTTCGAGACTCCTCGCTACTATGTCACCGTCATTGGTATGTTGCCGCT--CATGCCTCGTTCTCCCTTTATTCGTACTAACATATTACTCAGACGCTCCCGGTCATCGTGGCCCCCTTTCGCGACATGCCCTCACTGGTCGAATGCGAT-CGTCAAATTCATACCAACAGAGTCT-CGAATGAATATACACGACCGC-ATCCGCATTATTTGGGGCACACGTAGCCGATAAAA-CATGGGCTAAAC------------ATTCACTACAGGTCAAATCACCACCAAGGAGCTTGGAACCGTCATGCGCTCTCTCGGCCAGAACCCCTCCGAGTCTGAGCTTCAGGATATGATCAACGAGGTCGACGCTGACAATAACGGCACCATCGACTTCCCTGGTGCGTCATTTCCTAAGCTGATTACAGAGTGA-CAAGACTGACATTGGAG--AAAAGAGTTCCTTACCATGATGGCGCGCAAGATGAAGGACACCGACTCTGAGGAGGAGATCCGCGAGGCTTTCAAGGTTTTCGACCGTGACAACAACGGCTTCATTTCCGCTGCCGAACTCCGACATGTCATGACCTCCATTGGTGAGAAGCTCACCGATGACGAGGTTGATGAGATGATCCGGGAGGCTGACCAGGACGGTGATGGCCGAATCGACTGTGAGTTGCT-TACGGACAGCTCGCTTC-AAGGCTGGTAAGTCTTC--ACCGCGACT-TCAACTCGACGCGACACGCGTCTT---GGTCCATCAAAAACACCACCA-CTAACTTCATCACCAACAGCCCGCAAGTCCGCCCCATCCACCGGAGGTGTCAAGAAGCCTCACCGCTACAAGCCTGGTACCGTCGCTCTCCGTGAGATTCGACGATACCAGAAGTCGACTGAGCTCCTCATCCGAAAGCTCCCCTTCCAGCGCCTGGTAAGCATCACCTGC-TACATCAAC--CACAGCCTGACACATACTAACATTTGACAAACAGGTCCGCGAGATTGCCCAGGACTTCAAGTCTGATCTCCGCTTCCAGTCTTCCGCCATCGGTGCTCTCCAGGAGTCTGTCGAGTCCTACCTCGTCTCCCTCTTCGAGGATACCAACCTCTGTGCCATCCACGCCAATCGACAGCAATGGTGTCTACAA---CGGTACCTCCGAGCTCCAGCTCGAGCGTATGAGTGTCTACTTCAACGAGGTATGC-TTTA-ACAGTCAATGCCAAG-AATTCC-CAAGCTCACACAACTAGGCTCGGCGG---ATCAGCCCGCTCCCGGTAAAACGGGACGGCCC-GCCAGAGGACCCCTAAACTCT---GTTTCTATA-TGTAACTTCTGAGTAAAACCA-TAAATAAATCAAAAC--TTTCAACAACGGATCTCTTGGTTC-TGGCATCGATGAAGAACGCAGCAAAATGCGATAAGTA-ATGTGAA-TTGCAGAATTCAGTGAATCATCGAATCTTTGAACGCACATTGCGCCCGCCAGTAT--TCTGGCGGGCATGCCTGTTCGAGCGTCATTTCAACCCTCAAGCCC---AGCTTGGTGTTGGGACTCG-CGAGT------------TAAATCGCGTTCCCTCAAATTGATTGGCGGTCACGTCG-AGC",
+			"pin_array_13x2",
+			"13x2",
+			"ser",
+			"False",
+			"True",
+			"640",
+			"630",
+			"rss",
+			"whe",
+			"exeamediaplayer",
+			"cons",
+			"CREATE",
+			"home",
+			"$db",
+			"name",
+			"returnMessage",
+			"returnError",
+			"POST",
+			"HEADE",
+			"Done",
+			"Building Blocks",
+			"Buil"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"admin_",
+			"admin",
+			"DB_USER_PASSWORD",
+			"DB_USER",
+			"DB_NAME",
+			"DB_PASSWORD",
+			"$USERNAME",
+			"FILE",
+			"NAME",
+			"HOUR",
+			"DATE",
+			"Kreme",
+			"Krispy Kream",
+			"Leños y Carbón",
+			"http://stream02.exeamedia.com:8080/lenos.mp3",
+			"backup",
+			"#013476",
+			"farmatodo",
+			"Farmatodo",
+			"",
+			"width=\"250px\"",
+			"videoPlayer",
+			"#F98824",
+			"#500000",
+			"#000000",
+			"xml",
+			"e",
+			"o",
+			"_",
+			"World Music",
+			"jQuery(",
+			"exeaplayer",
+			"ExeaPlayer",
+			"COM_EXEAPLAYER",
+			"http://stream.seedcorporate.com:5086/tottotureproductor",
+			"/hec_players",
+			"19200",
+			"1200",
+			"$streamURL",
+			"corralenos.mp3",
+			"'http://stream02.exeamedia.com:8080/corralenos",
+			"ema04SAMDB_JV_CHILE",
+			"ema04SAMDB_JV_INT_2",
+			"testControlUnit",
+			"Control",
+			"testDataPath",
+			"rgba(255,255,255,0.5)",
+			"rgba(255,255,255,0.5);",
+			"rgb(216,2,27)",
+			"overflow: hidden;",
+			"\"<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/",
+			"--",
+			"raspberry_conn",
+			"serialport",
+			"xbee",
+			"True",
+			"False",
+			"650",
+			"640",
+			"ExeaMediaPlayer",
+			"$functions",
+			"fullName",
+			"$db->returnMessage",
+			"db->returnMessage",
+			"returnMessage",
+			"GET",
+			"Aceptar",
+			"Titanes del Ajedrez",
+			"2c393b",
+			"222b2d",
+			"",
+			"í",
+			"Bogotá",
+			"<acronym title=\"HyperText Markup Language 5\">HTML5</acronym>",
+			"<acronym title=\"HyperText Markup Language 5\">HTML</acronym>",
+			"playerContainer",
+			"program",
+			".",
+			"#",
+			"height:",
+			"width:",
+			"Boxes box",
+			"B",
+			"upperBoxes",
+			"Icp",
+			"Ibp",
+			"Iap",
+			"char",
+			".png",
+			".ong",
+			"Iout(:, i)",
+			"Ic1",
+			"Ib1",
+			"Ic1",
+			"Ia1",
+			"1,2",
+			"'",
+			"ExeaMediaPlayer",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/View/Users/login.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501,
+								501
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Controller/StudentsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1300,
+								1300
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/View/Students/add.ctp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1627,
+								1627
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/webroot/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"project": "MiNuevoMundo.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/blog/Blog.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 243.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
