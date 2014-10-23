@@ -24,7 +24,7 @@
 	</head>
 	<body>
 		  
-		<?php echo $this->element('navigation');?>
+		<?php echo $this->element('navigation') ?>
 	
 		<div class="container">
 			<?php echo $this->Session->flash(); ?>

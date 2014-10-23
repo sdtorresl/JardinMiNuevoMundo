@@ -26,8 +26,25 @@
 			<th><?php echo $this->Paginator->sort('guardian_phone'); ?></th>
 			<th><?php echo $this->Paginator->sort('guardian_email'); ?></th>
 			<th><?php echo $this->Paginator->sort('current_state'); ?></th>
+			<th><?php echo $this->Paginator->sort('guardian_relationship'); ?></th>
 			<th><?php echo $this->Paginator->sort('observations'); ?></th>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('born_place'); ?></th>
+			<th><?php echo $this->Paginator->sort('type'); ?></th>
+			<th><?php echo $this->Paginator->sort('live_with'); ?></th>
+			<th><?php echo $this->Paginator->sort('brother_number'); ?></th>
+			<th><?php echo $this->Paginator->sort('school1'); ?></th>
+			<th><?php echo $this->Paginator->sort('school2'); ?></th>
+			<th><?php echo $this->Paginator->sort('school3'); ?></th>
+			<th><?php echo $this->Paginator->sort('father_degree'); ?></th>
+			<th><?php echo $this->Paginator->sort('father_studies'); ?></th>
+			<th><?php echo $this->Paginator->sort('father_occupation'); ?></th>
+			<th><?php echo $this->Paginator->sort('father_company'); ?></th>
+			<th><?php echo $this->Paginator->sort('father_company_phone'); ?></th>
+			<th><?php echo $this->Paginator->sort('mother_degree'); ?></th>
+			<th><?php echo $this->Paginator->sort('mother_studies'); ?></th>
+			<th><?php echo $this->Paginator->sort('mother_occupation'); ?></th>
+			<th><?php echo $this->Paginator->sort('mother_company'); ?></th>
+			<th><?php echo $this->Paginator->sort('mother_company_name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -57,7 +74,25 @@
 		<td><?php echo h($student['Student']['guardian_phone']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['guardian_email']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['current_state']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['guardian_relationship']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['observations']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['born_place']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['type']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['live_with']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['brother_number']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['school1']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['school2']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['school3']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['father_degree']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['father_studies']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['father_occupation']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['father_company']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['father_company_phone']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['mother_degree']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['mother_studies']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['mother_occupation']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['mother_company']); ?>&nbsp;</td>
+		<td><?php echo h($student['Student']['mother_company_name']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $student['Student']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $student['Student']['id'])); ?>
@@ -82,20 +117,9 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
+	<h3><?php echo __('Acciones'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Student'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Achievement Summaries'), array('controller' => 'achievement_summaries', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Achievement Summary'), array('controller' => 'achievement_summaries', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Grades'), array('controller' => 'grades', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Grade'), array('controller' => 'grades', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Period Passwords'), array('controller' => 'period_passwords', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Period Password'), array('controller' => 'period_passwords', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Registrations'), array('controller' => 'registrations', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Registration'), array('controller' => 'registrations', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Courses'), array('controller' => 'courses', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Course'), array('controller' => 'courses', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('Registrar Estudiante'), array('action' => 'register')); ?> </li>
 	</ul>
 </div>
+

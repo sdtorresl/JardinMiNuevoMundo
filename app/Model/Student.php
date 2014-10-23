@@ -1,226 +1,141 @@
 <?php
 App::uses('AppModel', 'Model');
+
 /**
- * Student Model
- *
- */
+* Student Model
+*
+* @property AchievementSummary $AchievementSummary
+* @property Grade $Grade
+* @property PeriodPassword $PeriodPassword
+* @property Registration $Registration
+* @property Course $Course
+*/
 class Student extends AppModel {
 
 	/**
-	 * Display field
-	 *
-	 * @var string
-	 */
-	public $displayField = 'first_name';
-
-	/**
-	 * Validation rules
-	 *
-	 * @var array
-	 */
+	* Validation rules
+	*
+	* @var array
+	*/
 	public $validate = array(
-		'id' => array(
-			'uuid' => array(
-				'rule' => array('uuid'),
-				'on' => 'create',
-			),
-		),
 		'first_name' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
 		'last_name' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'code' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'identification' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-			'isUnique' => array(
-				'rule'    => 'isUnique',
-				'message' => 'Este NUID ya se encuentra registrado'
-			)
-		),
-		'born_date' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-			'date' => array(
-				'rule' => array('date'),
-			),
-		),
-		'blood_type' => array(
-			'bloodType' => array(
-				'rule' => array('custom', '/^[ABO+-]*$/i'),
-				'message' => 'El tipo de sangre debe indicarse con una letra y un signo, ejemplo: O-, A+, ...',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'social_ensurance' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'country' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'neighborhood' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9ñ ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-				'required' => false,
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
 		'address' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9#\- ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
 			'notEmpty' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'phone' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Solo se permiten carácteres numéricos',
-			),
-		),
-		'telephone' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Solo se permiten carácteres numéricos',
-			),
-		),
-		'mother_name' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'mother_phone' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Solo se permiten carácteres numéricos',
-			),
-		),
-		'mother_email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				'allowEmpty' => true,
-				'required' => false,
-			),
-		),
-		'father_name' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-		),
-		'father_phone' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Solo se permiten carácteres numéricos',
-			),
-		),
-		'father_email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				'allowEmpty' => true,
-				'required' => false,
-			),
-		),
-		'guardian_name' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-			),
-		),
-		'guardian_phone' => array(
-			'numeric' => array(
-				'rule' => array('numeric'),
-				'message' => 'Solo se permiten carácteres numéricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-			),
-		),
-		'guardian_email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				'allowEmpty' => true,
-				'required' => false,
-			),
-		),
-		'current_state' => array(
-			'alphaNumeric' => array(
-				'rule' => array('custom', '/^[a-z0-9 ]*$/i'),
-				'message' => 'Solo se permiten caracteres alfanuméricos',
-			),
-			'notEmpty' => array(
-				'rule' => array('notEmpty'),
-				'message' => 'Este campo no puede estar vacío',
+				//'message' => 'Your custom message here',
+				//'allowEmpty' => false,
+				//'required' => false,
+				//'last' => false, // Stop validation after this rule
+				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
 	);
+
+	public function isRegistered($user) {
+	    return $this->field('id', array('user_id' => $user)) !== false;
+	}
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+	/**
+	* hasMany associations
+	*
+	* @var array
+	*/
+	public $hasMany = array(
+		'AchievementSummary' => array(
+			'className' => 'AchievementSummary',
+			'foreignKey' => 'student_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Grade' => array(
+			'className' => 'Grade',
+			'foreignKey' => 'student_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'PeriodPassword' => array(
+			'className' => 'PeriodPassword',
+			'foreignKey' => 'student_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Registration' => array(
+			'className' => 'Registration',
+			'foreignKey' => 'student_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		)
+	);
+
+
+	/**
+	* hasAndBelongsToMany associations
+	*
+	* @var array
+	*/
+	public $hasAndBelongsToMany = array(
+		'Course' => array(
+			'className' => 'Course',
+			'joinTable' => 'students_courses',
+			'foreignKey' => 'student_id',
+			'associationForeignKey' => 'course_id',
+			'unique' => 'keepExisting',
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'finderQuery' => '',
+		)
+	);
+
 }
