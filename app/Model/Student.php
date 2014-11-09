@@ -50,6 +50,11 @@ class Student extends AppModel {
 		),
 	);
 
+	/**
+	 * Determinates whether or not a student is registered
+	 * @var user id
+	 * @return boolean
+	 **/
 	public function isRegistered($user) {
 	    return $this->field('id', array('user_id' => $user)) !== false;
 	}

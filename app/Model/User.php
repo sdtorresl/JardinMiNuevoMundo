@@ -8,30 +8,37 @@ class User extends AppModel {
 		'username' => array(
 			'required' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'A username is required'
+				'message' => 'El nombre de usuario no puede ser vacío'
 			),
 			'unique' => array(
 				'rule' => 'isUnique',
-        		'message' => 'This username has already been taken.'
+        		'message' => 'Este usuario ya se encuentra registrado'
 			)
 		),
 		'password' => array(
 			'required' => array(
 				'rule' => array('notEmpty'),
-				'message' => 'A password is required'
+				'message' => 'La contraseña no puede ser vacía'
 			)
 		),
 		'role' => array(
 			'valid' => array(
 				'rule' => array('inList', array('admin', 'student', 'teacher')),
-				'message' => 'Please enter a valid role',
+				'message' => 'Por favor ingrese un tipo válido',
 				'allowEmpty' => false
+			)
+		),
+		'register_code' => array(
+			'unique' => array(
+				'rule' => 'isUnique',
+        		'message' => 'Este código ya se encuentra registrado'
 			)
 		),
 		'email'
 
 	);
 
+	// Encript password before save
 	public function beforeSave($options = array()) {
 		if (isset($this->data[$this->alias]['password'])) {
 			$passwordHasher = new BlowfishPasswordHasher();
@@ -41,13 +48,4 @@ class User extends AppModel {
 		}
 		return true;
 	}
-
-	// public function beforeSave($options = array()) {
-	//     if(isset($this->data[$this->alias]['password'])) {
-	//         $this->data[$this->alias]['password'] = Security::hash($this->data[$this->alias]['password'], 'blowfish');
-	//         unset($this->data['User']['passwd']);
-	//     }
-
-	//     return true;
-	// }
 }

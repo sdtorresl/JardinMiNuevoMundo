@@ -37,7 +37,7 @@ class StudentsController extends AppController {
 	 * @return boolean
 	 */
 	public function isAuthorized($user) {
-		var_dump($user);
+		// var_dump($user);
 
 	    // Students can register themeselves
 	    if (isset($user['role']) && $user['role'] === 'student') {
@@ -72,6 +72,10 @@ class StudentsController extends AppController {
 		}
 		$options = array('conditions' => array('Student.' . $this->Student->primaryKey => $id));
 		$this->set('student', $this->Student->find('first', $options));
+		$this->pdfCongig = array(
+			'download' => true,
+			'filename' => 'apples.pdf'
+		);
 	}
 
 	/**
@@ -82,6 +86,13 @@ class StudentsController extends AppController {
 	public function register() {
 		// Get the user id
 		$id = $this->Auth->user('id'); 
+		$role = $this->Auth->user('role');
+
+		// Only students can register themselves
+		if ($role != 'student') {
+			$this->Session->setFlash(__('El usuario que se está intentando registrar no es del tipo estudiante'));
+			return $this->redirect(array('controller' => 'users', 'action' => 'profile'));;
+		}
 
 		if ($this->request->is('post')) {
 

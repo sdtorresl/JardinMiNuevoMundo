@@ -6,7 +6,6 @@
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
 			<th><?php echo $this->Paginator->sort('first_name'); ?></th>
 			<th><?php echo $this->Paginator->sort('last_name'); ?></th>
-			<th><?php echo $this->Paginator->sort('code'); ?></th>
 			<th><?php echo $this->Paginator->sort('identification'); ?></th>
 			<th><?php echo $this->Paginator->sort('born_date'); ?></th>
 			<th><?php echo $this->Paginator->sort('blood_type'); ?></th>
@@ -54,7 +53,6 @@
 		<td><?php echo h($student['Student']['id']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['first_name']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['last_name']); ?>&nbsp;</td>
-		<td><?php echo h($student['Student']['code']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['identification']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['born_date']); ?>&nbsp;</td>
 		<td><?php echo h($student['Student']['blood_type']); ?>&nbsp;</td>

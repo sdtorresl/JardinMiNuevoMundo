@@ -965,3 +965,404 @@ Stack Trace:
 #12 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
 #13 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2014-10-23 11:51:16 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /MiNuevoMundo/students/delete/86
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(139): CakeRequest->allowMethod('post', 'delete')
+#1 [internal function]: StudentsController->delete('86')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-26 14:06:56 Error: [MissingActionException] Action UsersController::list_managers() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list_managers',
+)
+Request URL: /MiNuevoMundo/users/list_managers
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-26 14:12:06 Error: Fatal Error (1): Call to undefined function echo__() in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 10]
+2014-10-26 14:12:06 Error: [FatalErrorException] Call to undefined function echo__()
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/MiNuev...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/MiNuev...', 10, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/MiNuev...', 10, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-10-26 15:44:09 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view/pdf/1
+Stack Trace:
+#0 [internal function]: StudentsController->view('pdf', '1')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-10-26 15:44:19 Error: [MissingActionException] Action StudentsController::pdf() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'pdf',
+)
+Request URL: /MiNuevoMundo/students/pdf/view/1
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-10-26 16:07:29 Error: [MissingLayoutException] Layout file "/var/www/MiNuevoMundo/app/View/Layouts/pdf/default.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/MiNuevoMundo/app/View/Layouts/pdf/default.ctp',
+)
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/View/View.php(510): View->_getLayoutFileName('default')
+#1 /var/www/MiNuevoMundo/lib/Cake/View/View.php(479): View->renderLayout('', 'default')
+#2 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(88): View->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#6 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-26 16:12:45 Error: [CakeException] wkhtmltopdf binary is not found or not executable: /usr/bin/wkhtmltopdf
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/Engine/WkHtmlToPdfEngine.php(29): WkHtmlToPdfEngine->_getCommand()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#2 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#6 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-26 16:12:59 Error: [CakeException] Pdf engine "CakePdf.domPdf" not found
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(195): CakePdf->engine('CakePdf.domPdf')
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(76): CakePdf->__construct(Array)
+#2 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(66): PdfView->renderer(Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(1241): PdfView->__construct(Object(StudentsController))
+#4 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(940): Controller->_getViewObject()
+#5 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#6 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#7 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-10-26 16:13:11 Error: [CakeException] wkhtmltopdf binary is not found or not executable: /usr/bin/wkhtmltopdf
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/Engine/WkHtmlToPdfEngine.php(29): WkHtmlToPdfEngine->_getCommand()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#2 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#5 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#6 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-10-26 16:14:45 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-26 16:16:20 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-26 22:03:30 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-27 21:26:20 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-10-27 21:27:02 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-05 21:59:28 Error: [NotFoundException] Invalid user
+Request URL: /MiNuevoMundo/users/view
+Stack Trace:
+#0 [internal function]: UsersController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-07 03:39:07 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Users/add.ctp, line 23]
+2014-11-07 03:39:08 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 23, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 23, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-07 05:45:25 Error: [MissingActionException] Action StudentsController::img() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'img',
+)
+Request URL: /MiNuevoMundo/students/img/logo.png
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-08 17:55:33 Error: [MissingActionException] Action StudentsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'add',
+)
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-08 17:56:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001-15' for key 'code_UNIQUE'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-08 17:58:06 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001-15' for key 'code_UNIQUE'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-08 17:58:15 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001-15' for key 'code_UNIQUE'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-08 17:59:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001-15' for key 'code_UNIQUE'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-08 18:03:15 Error: [MissingActionException] Action StudentsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'add',
+)
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-08 18:03:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '001-15' for key 'code_UNIQUE'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `Mi...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `Mi...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1854): DboSource->create(Object(User), Array, Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-08 18:30:41 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/js/register.js
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-08 18:30:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/js/register.js
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-08 18:32:40 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Layouts/default.ctp, line 53]
+2014-11-08 18:32:40 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 53, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 53, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-08 18:32:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/js/register.js
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-08 18:34:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/js/register.js
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-08 18:34:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/js/register.js
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-08 21:16:23 Error: [MissingActionException] Action StudentsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'add',
+)
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-09 09:59:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.register_code' in 'where clause'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(User), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('count', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(3349): Model->find('count', Array)
+#7 [internal function]: Model->isUnique(Array, Array)
+#8 /var/www/MiNuevoMundo/lib/Cake/Model/Validator/CakeValidationRule.php(275): call_user_func_array(Array, Array)
+#9 /var/www/MiNuevoMundo/lib/Cake/Model/Validator/CakeValidationSet.php(135): CakeValidationRule->process('register_code', Array, Array)
+#10 /var/www/MiNuevoMundo/lib/Cake/Model/ModelValidator.php(267): CakeValidationSet->validate(Array, false)
+#11 /var/www/MiNuevoMundo/lib/Cake/Model/ModelValidator.php(99): ModelValidator->errors(Array)
+#12 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(3382): ModelValidator->validates(Array)
+#13 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(1758): Model->validates(Array)
+#14 /var/www/MiNuevoMundo/app/Controller/UsersController.php(85): Model->save(Array)
+#15 [internal function]: UsersController->add()
+#16 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-11-09 11:01:15 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 348]
+2014-11-09 11:01:15 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 348)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 348, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 348, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 13:33:10 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 55]
+2014-11-09 13:33:10 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 55, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 55, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 14:36:03 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 142]
+2014-11-09 14:36:03 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 142, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 142, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 14:36:14 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 142]
+2014-11-09 14:36:14 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 142)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 142, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 142, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

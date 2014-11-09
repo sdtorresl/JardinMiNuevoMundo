@@ -50,7 +50,8 @@ class AppController extends Controller {
 				)
 			),
 			'authorize' => array('Controller')
-		)
+		),
+		'RequestHandler'
 	);
 
 	public function beforeFilter() {

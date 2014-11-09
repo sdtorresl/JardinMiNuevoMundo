@@ -99,13 +99,14 @@ class UsersController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved'));
+				$this->Session->setFlash(__('Los cambios han sido guardados'));
 				return $this->redirect(array('action' => 'index'));
 			}
 			$this->Session->setFlash(
-				__('The user could not be saved. Please, try again.')
+				__('Los cambios no han sido guardados, por favor intente nuevamente')
 			);
 		} else {
+			$this->set('user', $this->User->read(null, $id));
 			$this->request->data = $this->User->read(null, $id);
 			unset($this->request->data['User']['password']);
 		}
