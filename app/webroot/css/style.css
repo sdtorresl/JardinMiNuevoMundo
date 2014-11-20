@@ -4,11 +4,24 @@
   src: url('../fonts/ArialRoundedMTBold.ttf')  format('truetype');
 }
 /*General*/
+html {
+	height: 100%;
+}
 body {
-	background: url('../img/bg.jpg') center top no-repeat;
+	background: url('../img/bg.jpg') center top repeat-y;
+	background-size: 100%;
 	font-family: 'Arial Rounded';
 	color: #8BC53F!important;
 	padding-top: 60px;
+	height: 100%;
+}
+.container {
+	min-height: 95%;
+}
+footer {
+	min-height: 5%;
+	font-size: 0.8em;
+	/*text-shadow: 2px 2px #DDC98D;*/
 }
 label {
 	font-weight: normal;
@@ -41,6 +54,15 @@ h4 {
 p, label {
 	font-size: 1em;
 }
+a {
+	text-decoration: none;
+}
+#flashMessage {
+	margin: 0px 0px 20px 0px;
+	background: #FCFFCD;
+	padding: 10px;
+	border-radius: 5px;
+}
 .form-control {
 	font-family: Arial;
 	/*color: #8BC53F;*/
@@ -53,6 +75,10 @@ h1 span {
 }
 .row {
 	margin-bottom: 15px;
+}
+.vertical-align {
+	display: flex;
+	align-items: center;
 }
 .submit input {
 	background-color: #8BC53F;
@@ -97,12 +123,11 @@ h1 span {
 .bg-logo {
 	position: absolute;
 	right: 0;
-	top: 10px;
+	top: 12px;
 	width: 100px;
 }
 .content {
-	/*padding: 60px 40px 40px 40px;*/
-	/*padding: 20px;*/
+	padding-top: 50px;
 }
 /*Students form*/
 .students form {
@@ -164,10 +189,16 @@ label {
 	margin-left: 2%;
 	margin-right: 2%;
 }
+.error {
+	background-color: #ccc;
+}
+.error-message {
+	color: red;
+}
 /*Responisve design*/
 @media (min-width: 1200px) {
 	.lateral-menu {
-		position: fixed;
-		width: 255px;
+		/*position: fixed;*/
+		/*width: 255px;*/
 	}
 }

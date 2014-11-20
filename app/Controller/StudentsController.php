@@ -37,12 +37,25 @@ class StudentsController extends AppController {
 	 * @return boolean
 	 */
 	public function isAuthorized($user) {
-		// var_dump($user);
 
-	    // Students can register themeselves
 	    if (isset($user['role']) && $user['role'] === 'student') {
-	    	if (in_array($this->action, array('register', 'index'))) {
+	    	// Students can view only your own profile
+    		if ($this->action == 'view') {
+    			$user_id = $this->request->params['pass']['0'];
+
+    			if ($user_id == $user['id']) {
+    				return true;
+    			}
+    			else {
+    				return false;
+    			}
+    		}
+	    	// Students can register themeselves
+	    	if (in_array($this->action, array('register', 'profile', 'index'))) {
 	        	return true;
+	    	}
+	    	else {
+	    		return false;
 	    	}
 	    }
 
@@ -55,8 +68,6 @@ class StudentsController extends AppController {
 	* @return void
 	*/
 	public function index() {
-		$this->Student->recursive = 0;
-		$this->set('students', $this->Paginator->paginate());
 	}
 
 	/**
@@ -68,13 +79,21 @@ class StudentsController extends AppController {
 	*/
 	public function view($id = null) {
 		if (!$this->Student->exists($id)) {
-			throw new NotFoundException(__('Invalid student'));
+			throw new NotFoundException(__('Estudiante inválido'));
 		}
+		if (!$this->Student->isRegistered($id)) {
+			$this->Session->setFlash('Debe registrar el estudiante antes de imprimir');
+			$this->redirect(array('action' => 'register'));
+		}
+
+		$user_id = $id;
+		$id = $this->Student->getStudentID($user_id);
+
 		$options = array('conditions' => array('Student.' . $this->Student->primaryKey => $id));
 		$this->set('student', $this->Student->find('first', $options));
 		$this->pdfCongig = array(
 			'download' => true,
-			'filename' => 'apples.pdf'
+			'filename' => 'register.pdf'
 		);
 	}
 
@@ -107,8 +126,10 @@ class StudentsController extends AppController {
 		}
 		elseif ($this->Student->isRegistered($id)) {
 			$this->Session->setFlash(__('El estudiante ya ha sido registrado'));
-			return $this->redirect(array('controller' => 'users', 'action' => 'profile'));
+			$this->set('id', $id);
+			return $this->redirect(array('controller' => 'students', 'action' => 'view', $id));
 		}
+		$this->set('id', $id);
 	}
 
 	/**
@@ -120,11 +141,11 @@ class StudentsController extends AppController {
 	*/
 	public function edit($id = null) {
 		if (!$this->Student->exists($id)) {
-			throw new NotFoundException(__('Invalid student'));
+			throw new NotFoundException(__('Estudiante inválido'));
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Student->save($this->request->data)) {
-				$this->Session->setFlash(__('The student has been saved.'));
+				$this->Session->setFlash(__('El estudiante ha sido editado.'));
 				return $this->redirect(array('action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The student could not be saved. Please, try again.'));
@@ -145,13 +166,13 @@ class StudentsController extends AppController {
 	public function delete($id = null) {
 		$this->Student->id = $id;
 		if (!$this->Student->exists()) {
-			throw new NotFoundException(__('Invalid student'));
+			throw new NotFoundException(__('Estudiante inválido'));
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->Student->delete()) {
-			$this->Session->setFlash(__('The student has been deleted.'));
+			$this->Session->setFlash(__('El estudiante ha sido borrado satisfactoriamente.'));
 		} else {
-			$this->Session->setFlash(__('The student could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('El estudiante no pudo ser borrado. Por favor intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
 	}

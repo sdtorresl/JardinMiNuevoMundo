@@ -32,7 +32,12 @@ class User extends AppModel {
 			'unique' => array(
 				'rule' => 'isUnique',
         		'message' => 'Este código ya se encuentra registrado'
-			)
+			),
+			'userIsStudent' => array(
+				'rule' => array('userIsStudent'),
+				'message' => 'El código de registro es requerido si el usuario es de tipo estudiante',
+				'allowEmpty' => true
+			),
 		),
 		'email'
 
@@ -47,5 +52,14 @@ class User extends AppModel {
 			);
 		}
 		return true;
+	}
+
+	public function userIsStudent() {
+		if ($this->data['User']['role'] == 'student' && $this->data['User']['register_code'] != "") {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 }

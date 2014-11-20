@@ -35,7 +35,6 @@
  * @copyright 2004 Benj Carson
  * @author Benj Carson <benjcarson@digitaljunkies.ca>
  * @package dompdf
-
  */
 
 require_once("dompdf_config.inc.php");
@@ -44,6 +43,7 @@ require_once("dompdf_config.inc.php");
  * @access private
  */
 define("_TTF2AFM", escapeshellarg(TTF2AFM) . " -a -GAef -OW ");
+// define("_TTF2AFM", escapeshellarg(TTF2AFM) . " -e 8r.enc -o times.afm ");
 
 if ( !file_exists(TTF2AFM) ) {
   die("Unable to locate the ttf2afm / ttf2pt1 executable (checked " . TTF2AFM . ").\n");

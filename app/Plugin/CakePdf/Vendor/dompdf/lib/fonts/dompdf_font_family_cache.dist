@@ -1,91 +1,100 @@
 array (
-  'sans-serif' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Helvetica',
-    'bold' => DOMPDF_FONT_DIR . 'Helvetica-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Helvetica-BoldOblique',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Helvetica-BoldOblique'
+  'sans-serif' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-BoldOblique',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-BoldOblique',
   ),
-  'times' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Times-Roman',
-    'bold' => DOMPDF_FONT_DIR . 'Times-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Times-BoldItalic',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Times-BoldItalic'
+  'times' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Roman',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-BoldItalic',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-BoldItalic',
   ),
-  'times-roman' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Times-Roman',
-    'bold' => DOMPDF_FONT_DIR . 'Times-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Times-BoldItalic',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Times-BoldItalic'
+  'times-roman' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Roman',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-BoldItalic',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-BoldItalic',
   ),
-  'courier' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Courier',
-    'bold' => DOMPDF_FONT_DIR . 'Courier-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique'
+  'courier' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
   ),
-  'helvetica' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Helvetica',
-    'bold' => DOMPDF_FONT_DIR . 'Helvetica-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Helvetica-BoldOblique',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Helvetica-BoldOblique'
+  'helvetica' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-BoldOblique',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Helvetica-BoldOblique',
   ),
-  'zapfdingbats' => array (
-    'normal' => DOMPDF_FONT_DIR . 'ZapfDingbats',
-    'bold' => DOMPDF_FONT_DIR . 'ZapfDingbats',
-    'italic' => DOMPDF_FONT_DIR . 'ZapfDingbats',
-    'bold_italic' => DOMPDF_FONT_DIR . 'ZapfDingbats'
+  'zapfdingbats' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/ZapfDingbats',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/ZapfDingbats',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/ZapfDingbats',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/ZapfDingbats',
   ),
-  'symbol' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Symbol',
-    'bold' => DOMPDF_FONT_DIR . 'Symbol',
-    'italic' => DOMPDF_FONT_DIR . 'Symbol',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Symbol'
+  'symbol' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Symbol',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Symbol',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Symbol',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Symbol',
   ),
-  'serif' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Times-Roman',
-    'bold' => DOMPDF_FONT_DIR . 'Times-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Times-Italic',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Times-BoldItalic'
+  'serif' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Roman',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-Italic',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Times-BoldItalic',
   ),
-  'monospace' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Courier',
-    'bold' => DOMPDF_FONT_DIR . 'Courier-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique'
+  'monospace' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
   ),
-  'fixed' => array (
-    'normal' => DOMPDF_FONT_DIR . 'Courier',
-    'bold' => DOMPDF_FONT_DIR . 'Courier-Bold',
-    'italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique',
-    'bold_italic' => DOMPDF_FONT_DIR . 'Courier-BoldOblique'
-  )
+  'fixed' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-Bold',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Courier-BoldOblique',
+  ),
+  'raspoutine' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+  ),
+  'raspoutine medium' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineMedium_TB',
+  ),
+  'raspoutine clasic' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineClassic_TB',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineClassic_TB',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineClassic_TB',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/RaspoutineClassic_TB',
+  ),
+  'raspoutine medium italic' => 
+  array (
+    'normal' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Raspoutine Medium Italic',
+    'bold' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Raspoutine Medium Italic',
+    'italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Raspoutine Medium Italic',
+    'bold_italic' => '/var/www/MiNuevoMundo/app/Plugin/CakePdf/Vendor/dompdf/lib/fonts/Raspoutine Medium Italic',
+  ),
 )
-
-/* The proper way for web browser environment independent font handling in html/css is,
- * to defining a font search path ending in serif, sans-serif, or monospace, e.g.:
- * <style>body {font-family: Verdana,Arial,Helvetica,sans-serif;}</style>
- *
- * For more satisfying results on html files without proper font search path,
- * popular fonts which are candidates for further font aliases similar to
- * 'sans-serif' and 'helvetica' above might be:
- *
- * See
- * http://www.codestyle.org/css/font-family/index.shtml
- * http://mondaybynoon.com/2007/04/02/linux-font-equivalents-to-popular-web-typefaces/
- * C:\Windows\Fonts
- *
- * Times:
- * serif, times, times-roman, times, times new roman, georgia, garamond, ms reference serif,
- * palatino, palatino linotype, dejavu serif, freeserif, liberation serif, luxi serif, 
- * century schoolbook, new century schoolbook
- *
- * Helvetica:
- * sans-serif, helvetica, helvetica, microsoft sans serif, verdana, arial, tahoma, 
- * trebuchet ms, lucida sans, ms reference sans serif, lucida grande, freesans, 
- * liberation sans, dejavu sans, luxi sans, lucida
- *
- * Courier:
- * monospace, fixed, courier, courier new, lucida console, lucida sans typewriter, freeMono, 
- * fixed, terminal, dejavu sans mono, liberation mono, luxi mono
- */
-

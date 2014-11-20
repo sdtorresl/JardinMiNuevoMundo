@@ -1,0 +1,65 @@
+#logo {
+	margin-top: 5px;
+	margin-left: 1px;
+}
+body {
+	margin: 50px;
+	margin-top: 80px;
+	border: 2px solid #A8CF45;
+	font-family: 'Raspoutine Medium Italic'!important;
+	color: #5F6727;
+}
+h1 {
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Raspoutine Medium'!important;
+	font-style: italic!important;
+}
+h2 {
+	font-size: 1em;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #A8CF45;
+	/*text-transform: capitalize;*/
+}
+p, td, tr {
+	font-size: 0.9em;
+	font-family: 'Raspoutine Clasic'!important;
+	color: black;
+}
+.students {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+table {
+	width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+td {
+	border: 1px solid #A8CF45;
+	padding: 5px;
+	width: 100%;
+}
+.code {
+	border: 1px solid #A8CF45;
+	padding: 3px;
+	width: 150px;
+	height: 15px;
+	margin-left: 520px;
+}
+.signaturesContainer {
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+.signatures {
+	border-collapse: separate;
+	border-spacing: 20px 0px 0px 0px;
+}
+.signatures td {
+	border: 0;
+	border-top: 2px solid #A8CF45;
+	padding-top: 10px;
+}

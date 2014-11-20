@@ -69,8 +69,7 @@ Cache::config('default', array('engine' => 'File'));
  * CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
  *
  */
-// CakePlugin::load('Authsome');
-CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
+// CakePlugin::load('DebugKit'); //Loads a single plugin named DebugKit
 CakePlugin::load('CakePdf', array('bootstrap' => true, 'routes' => true));
 
 /**
@@ -114,18 +113,13 @@ CakeLog::config('error', array(
  * Configure CakePDF
  */
 Configure::write('CakePdf', array(
-	'engine' => 'CakePdf.WkHtmlToPdf',
+	'engine' => 'CakePdf.DomPdf',
 	'options' => array(
 		'print-media-type' => false,
 		'outline' => true,
 		'dpi' => 96
 	),
-	'margin' => array(
-		'bottom' => 15,
-		'left' => 50,
-		'right' => 30,
-		'top' => 45
-	),
-	'orientation' => 'landscape',
-	'download' => true
+	// 'orientation' => 'landscape',
+	'download' => true,
+	// 'pageSize' => 
 ));

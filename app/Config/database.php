@@ -8,5 +8,6 @@ class DATABASE_CONFIG {
 		'login' => 'root',
 		'password' => 'Mysqlpass',
 		'database' => 'MiNuevoMundo',
+		'encoding' => 'utf8'
 	);
 }

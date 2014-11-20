@@ -173,6 +173,7 @@ if (!defined("DOMPDF_UNICODE_ENABLED")) {
  */
 if (!defined("TTF2AFM")) {
   define("TTF2AFM", DOMPDF_LIB_DIR ."/ttf2ufm/ttf2ufm-src/ttf2pt1");
+  // define("TTF2AFM", "/usr/bin/ttf2afm");
   //define("TTF2AFM", "/usr/bin/ttf2pt1");
 }
 

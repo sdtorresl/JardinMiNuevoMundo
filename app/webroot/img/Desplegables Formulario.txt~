@@ -1,0 +1,30 @@
+Datos de Estudiante
+
+Tipo ID: NUIP, Tarjeta de Identidad
+Departamento de Expedición: ....
+Municipio de Expedición: ....
+Genero: Masculino, Femenino
+Fecha de Nacimiento: DD/MM/AA
+Departamento de nacimiento: ...
+Municipio de nacimiento:...
+Tipo de estudiante: Nuevo , Antiguo
+GRado al que ingresa: Maternal, Párvulos, Pre-jardín, Jardín, Transición, Primero
+Grupo Sanguineo: A+, A-, O+, O-, AB+, AB-, B+, B-
+Numero de hermanos: 1,2,3,4,5
+Lugar que ocupa: 1,2,3,4,5
+Con Quien vive: Juntos padres, Papá, Mamá, Mama y Abuelos, Papa y Abuelos
+
+
+Información Familiar
+
+Tipo ID: Cedula, Cedula de extanjeria.
+GRado de estudios: Primaria, Bachillerato, Tecnico, Tecnologo, Pregrado, Posgrado.
+Estado civil: Casados, Separados, Unión Libre, Viudo(a).
+Parentesco: Abuelo, Abuela, Tio, Tía, Hermano, Hermana.
+
+Información General
+
+Servico de Transporte: Si completa, Si media,  No
+Servicio de semi-internado: Si, No
+
+

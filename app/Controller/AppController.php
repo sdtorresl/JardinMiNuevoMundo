@@ -33,17 +33,18 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 
 	public $components = array(
-		'DebugKit.Toolbar',
+		// 'DebugKit.Toolbar',
 		'Session',
 		'Auth' => array(
 			'loginRedirect' => array(
 				'controller' => 'students',
-				'action' => 'index'
+				'action' => 'register'
 			),
 			'logoutRedirect' => array(
-				'controller' => 'students',
-				'action' => 'index'
+				'controller' => 'users',
+				'action' => 'login'
 			),
+			'authError' => 'Usted no está autorizado para acceder a este recurso',
 			'authenticate' => array(
 				'Form' => array(
 					'passwordHasher' => 'Blowfish'
@@ -54,8 +55,15 @@ class AppController extends Controller {
 		'RequestHandler'
 	);
 
+	/**
+	 * beforeFilter method
+	 * tell the AuthComponent to not require a login
+	 * for certain actions, in every controller
+	 *
+	 * @return void
+	 */
 	public function beforeFilter() {
-		$this->Auth->allow('index');
+		// $this->Auth->allow('index');
 	}
 
 	/**

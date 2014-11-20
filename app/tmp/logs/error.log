@@ -1366,3 +1366,694 @@ Stack Trace:
 #3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-11-09 16:06:20 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'isRegistered' at line 1
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('isRegistered', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('isRegistered', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('isRegistered', Array, Array)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(808): DboSource->query('isRegistered', Array, Object(Student))
+#5 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(108): Model->__call('isRegistered', Array)
+#6 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(108): Student->isRegistered('18')
+#7 [internal function]: StudentsController->register()
+#8 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-09 16:34:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`MiNuevoMundo`.`students`, CONSTRAINT `fk_students_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/delete/18
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/Database/Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2634): Mysql->delete(Object(User), Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(122): Model->delete()
+#5 [internal function]: UsersController->delete('18')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-09 16:35:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`MiNuevoMundo`.`students`, CONSTRAINT `fk_students_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/delete/18
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/Database/Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2634): Mysql->delete(Object(User), Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(122): Model->delete()
+#5 [internal function]: UsersController->delete('18')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-09 16:46:32 Error: [MissingActionException] Action UsersController::list_students() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list_students',
+)
+Request URL: /MiNuevoMundo/users/list_students
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-09 19:11:11 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/1.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-09 19:48:44 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view/99
+Stack Trace:
+#0 [internal function]: StudentsController->view('99')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-09 19:48:56 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view/89
+Stack Trace:
+#0 [internal function]: StudentsController->view('89')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-09 19:49:14 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view/88
+Stack Trace:
+#0 [internal function]: StudentsController->view('88')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-09 20:39:10 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 5]
+2014-11-09 20:39:10 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:45:33 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 5]
+2014-11-09 20:45:33 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:47:16 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:47:16 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:47:53 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:47:53 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:48:09 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:48:09 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:48:26 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:48:26 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:48:50 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:48:50 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:49:21 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 7]
+2014-11-09 20:49:21 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 7, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:50:00 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 5]
+2014-11-09 20:50:00 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:50:51 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 5]
+2014-11-09 20:50:51 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 5, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:52:59 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 530]
+2014-11-09 20:52:59 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 530)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 530, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 530, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-09 20:53:33 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 1483]
+2014-11-09 20:53:33 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 1483)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 1483, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 1483, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-12 21:05:51 Error: [MissingActionException] Action UsersController::list() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'list',
+)
+Request URL: /MiNuevoMundo/users/list
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-13 12:35:48 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in [/var/www/MiNuevoMundo/app/Model/User.php, line 39]
+2014-11-13 12:35:48 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')'
+Request URL: /MiNuevoMundo/users/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 39)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 39, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 39, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 14:31:45 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`MiNuevoMundo`.`students`, CONSTRAINT `fk_students_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/delete/20
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/Database/Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2634): Mysql->delete(Object(User), Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(125): Model->delete()
+#5 [internal function]: UsersController->delete('20')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-13 14:31:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`MiNuevoMundo`.`students`, CONSTRAINT `fk_students_users1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+Request URL: /MiNuevoMundo/users/delete/18
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('DELETE `User` F...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/Database/Mysql.php(454): DboSource->execute('DELETE `User` F...')
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2634): Mysql->delete(Object(User), Array)
+#4 /var/www/MiNuevoMundo/app/Controller/UsersController.php(125): Model->delete()
+#5 [internal function]: UsersController->delete('18')
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-13 14:32:54 Error: [MissingActionException] Action StudentsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'add',
+)
+Request URL: /MiNuevoMundo/students/add
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-13 15:37:25 Error: Fatal Error (4): syntax error, unexpected T_ECHO, expecting ':' in [/var/www/MiNuevoMundo/app/View/Users/view.ctp, line 69]
+2014-11-13 15:37:25 Error: [FatalErrorException] syntax error, unexpected T_ECHO, expecting ':'
+Request URL: /MiNuevoMundo/users/view/1
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 69)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 69, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 69, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 22:03:31 Error: [MissingControllerException] Controller class PrintController could not be found.
+Exception Attributes: array (
+  'class' => 'PrintController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/print
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 22:03:43 Error: Fatal Error (4): syntax error, unexpected T_PRINT, expecting T_STRING in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 167]
+2014-11-13 22:03:43 Error: [FatalErrorException] syntax error, unexpected T_PRINT, expecting T_STRING
+Request URL: /MiNuevoMundo/students/print
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 167)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 22:04:08 Error: Fatal Error (4): syntax error, unexpected T_PRINT, expecting T_STRING in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 167]
+2014-11-13 22:04:08 Error: [FatalErrorException] syntax error, unexpected T_PRINT, expecting T_STRING
+Request URL: /MiNuevoMundo/students/print/38
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 167)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 22:04:45 Error: Fatal Error (4): syntax error, unexpected T_PRINT, expecting T_STRING in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 167]
+2014-11-13 22:04:45 Error: [FatalErrorException] syntax error, unexpected T_PRINT, expecting T_STRING
+Request URL: /MiNuevoMundo/students/
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 167)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 22:05:36 Error: [MissingControllerException] Controller class ViewController could not be found.
+Exception Attributes: array (
+  'class' => 'ViewController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/view/7
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-13 22:05:43 Error: Fatal Error (4): syntax error, unexpected T_PRINT, expecting T_STRING in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 167]
+2014-11-13 22:05:43 Error: [FatalErrorException] syntax error, unexpected T_PRINT, expecting T_STRING
+Request URL: /MiNuevoMundo/students/view/7
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 167)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 167, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-13 22:09:33 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/7.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-13 22:12:47 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/7.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-13 22:16:04 Error: [CakeException] WKHTMLTOPDF didn't return any data
+Request URL: /MiNuevoMundo/students/view/7.pdf
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/Plugin/CakePdf/Pdf/CakePdf.php(236): WkHtmlToPdfEngine->output()
+#1 /var/www/MiNuevoMundo/app/Plugin/CakePdf/View/PdfView.php(97): CakePdf->output('<!DOCTYPE html>...')
+#2 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(954): PdfView->render(NULL, NULL)
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#5 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-11-14 04:05:36 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view
+Stack Trace:
+#0 [internal function]: StudentsController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-14 04:08:10 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view/options%5B0%5D:33
+Stack Trace:
+#0 [internal function]: StudentsController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-14 04:08:38 Error: [NotFoundException] Invalid student
+Request URL: /MiNuevoMundo/students/view
+Stack Trace:
+#0 [internal function]: StudentsController->view()
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-14 04:33:57 Error: Fatal Error (1): Call to undefined function isRegistered() in [/var/www/MiNuevoMundo/app/Model/Student.php, line 548]
+2014-11-14 04:33:57 Error: [FatalErrorException] Call to undefined function isRegistered()
+Request URL: /MiNuevoMundo/students/view/33
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/MiNuev...', 548)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/MiNuev...', 548, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/MiNuev...', 548, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:28:05 Error: [MissingActionException] Action StudentsController::print() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'print',
+)
+Request URL: /MiNuevoMundo/students/print/38
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-18 20:41:15 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:41:15 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:41:36 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:41:36 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:41:37 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:41:37 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:42:01 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:42:01 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:42:08 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:42:08 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:42:19 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:42:19 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:43:15 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:43:15 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:44:24 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:44:24 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:46:18 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 84]
+2014-11-18 20:46:18 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 84, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 84, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:47:09 Error: Fatal Error (1): Call to a member function exists() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 84]
+2014-11-18 20:47:09 Error: [FatalErrorException] Call to a member function exists() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 84)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 84, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 84, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:49:46 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:49:46 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:50:40 Error: Fatal Error (1): Call to a member function read() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 83]
+2014-11-18 20:50:40 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 83, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 20:57:25 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.user_id' in 'on clause'
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Student...', Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Student...', Array, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Student...', false)
+#4 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Student), Array)
+#5 /var/www/MiNuevoMundo/lib/Cake/Model/Model.php(2919): Model->_readDataSource('90', Array)
+#6 /var/www/MiNuevoMundo/app/Controller/StudentsController.php(86): Model->find('90')
+#7 [internal function]: StudentsController->view('34')
+#8 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#9 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#11 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-11-18 21:31:25 Error: Fatal Error (4): syntax error, unexpected T_DOUBLE_ARROW, expecting ')' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 191]
+2014-11-18 21:31:25 Error: [FatalErrorException] syntax error, unexpected T_DOUBLE_ARROW, expecting ')'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 191)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 191, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 191, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 21:31:59 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 365]
+2014-11-18 21:31:59 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 365)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 365, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 365, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 21:32:32 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 365]
+2014-11-18 21:32:32 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 365)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 365, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 365, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 21:40:27 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/MiNuevoMundo/app/View/Students/register.ctp, line 27]
+2014-11-18 21:40:27 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /MiNuevoMundo/students/register
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/MiNuev...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/MiNuev...', 27, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/MiNuev...', 27, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-18 21:46:15 Error: [MissingActionException] Action StudentsController::register.submit() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'register.submit',
+)
+Request URL: /MiNuevoMundo/students/register.submit
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-19 09:44:57 Error: [MissingActionException] Action AppController::Plugin() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'Plugin',
+)
+Request URL: /MiNuevoMundo/app/Plugin/CakePdf/
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-19 11:35:49 Error: [MissingActionException] Action StudentsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'StudentsController',
+  'action' => 'index',
+)
+Request URL: /MiNuevoMundo/students/
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#2 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-11-19 15:09:05 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 85]
+2014-11-19 15:09:05 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /MiNuevoMundo/students/view/35
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/MiNuev...', 85)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/MiNuev...', 85, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/MiNuev...', 85, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-19 15:09:28 Error: [NotFoundException] Estudiante inválido
+Request URL: /MiNuevoMundo/students/view/35
+Stack Trace:
+#0 [internal function]: StudentsController->view('35')
+#1 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(StudentsController), Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#4 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-11-19 15:10:37 Error: Fatal Error (1): Call to a member function redirect() on a non-object in [/var/www/MiNuevoMundo/app/Controller/StudentsController.php, line 86]
+2014-11-19 15:10:37 Error: [FatalErrorException] Call to a member function redirect() on a non-object
+Request URL: /MiNuevoMundo/students/view/35
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/MiNuev...', 86)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/MiNuev...', 86, Array)
+#2 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/MiNuev...', 86, Array)
+#3 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-11-19 15:27:02 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /MiNuevoMundo/students/view/34
+Stack Trace:
+#0 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(227): CakePlugin::path('DebugKit')
+#1 /var/www/MiNuevoMundo/lib/Cake/Core/App.php(549): App::path('Controller/Comp...', 'DebugKit')
+#2 [internal function]: App::load('ToolbarComponen...')
+#3 [internal function]: spl_autoload_call('ToolbarComponen...')
+#4 /var/www/MiNuevoMundo/lib/Cake/Controller/ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#5 /var/www/MiNuevoMundo/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#6 /var/www/MiNuevoMundo/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(StudentsController))
+#7 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(186): Controller->constructClasses()
+#8 /var/www/MiNuevoMundo/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(StudentsController), Object(CakeRequest))
+#9 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-11-19 16:29:16 Error: [MissingControllerException] Controller class ChangePasswordController could not be found.
+Exception Attributes: array (
+  'class' => 'ChangePasswordController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/changePassword/change_password
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-11-19 16:30:08 Error: [MissingControllerException] Controller class ChangePasswordController could not be found.
+Exception Attributes: array (
+  'class' => 'ChangePasswordController',
+  'plugin' => NULL,
+)
+Request URL: /MiNuevoMundo/changePassword/user
+Stack Trace:
+#0 /var/www/MiNuevoMundo/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

@@ -1,10 +1,13 @@
-<div class="row">
+<div class="row" style="height: 100%;">
 	<div class="col-lg-4 col-lg-offset-4">
 
-		<h2>Ingreso</h2>
+		<div class="title">
+			<span class="bg-title"></span>
+			<h1>Ingreso</h1>
+			<? echo $this->Html->Image('logo.png', array('class' => 'bg-logo')); ?>
+		</div>
 
 		<div class="content">
-			<?php echo $this->Session->flash(); ?>
 			<br>
 			<br>
 			<?php echo $this->Form->create('User', array('class'=>'form-horizontal', 'inputDefaults'=>array('label'=>false)));?>
@@ -34,15 +37,16 @@
 					</div>
 				</div>
 
-				<div class="form-group">
-					<?php echo $this->Form->submit('Ingresar', array('class'=>'btn btn-primary'))?>
+				<?php echo $this->Session->flash(); ?>
+				<br>
+				
+				<div class="form-group" style="margin-right: 0px; margin-bottom: 0px;">
+					<div class="row">
+						<div class="col-sm-12">
+							<?php echo $this->Form->end('Ingresar', array('class'=>'btn btn-primary'))?>
+						</div>	
+					</div>
 				</div>
-			<?php echo $this->Form->end();?>
-
-		</div>
-
-		<div class="btn btn-primary btn-exit">
-			<a href="http://jardinminuevomundo.com">Salir</a>
 		</div>
 	</div>
 </div>
