@@ -1,16 +1,16 @@
 <!-- app/View/Users/edit.ctp -->
 <div class="col-md-3">
 	<div class="lateral-menu">
-		<div class="actions">
-			<h3><?php echo __('Acciones'); ?></h3>
-			<ul>
-				<li><?php echo $this->Html->link(__('Listar Usuarios'), array('action' => 'index')); ?></li>
-				<li><?php echo $this->Html->link(__('Editar'), array('action' => 'edit', $user['User']['id'])); ?></li>
-				<li><?php echo $this->Form->postLink(__('Borrar'), array('action' => 'delete', $user['User']['id']), array(), __('¿Está seguro de borrar el usuario %s?', $user['User']['username'])); ?></li>
-			</ul>
-		</div>
+		<ul class="nav nav-pills nav-stacked">
+			<li><?php echo $this->Html->link(__('Agregar usuario'), array('action' => 'add')) ?></li>
+			<li><?php echo $this->Html->link(__('Listar estudiantes'), array('action' => 'list_students')) ?></li>
+			<li><?php echo $this->Html->link(__('Listar profesores'), array('action' => 'list_teachers')) ?></li>
+			<li><?php echo $this->Html->link(__('Listar usuarios'), array('action' => 'list_users')) ?></li>
+			<li><?php echo $this->Html->link(__('Regresar al inicio'), array('action' => 'admin')) ?></li>
+		</ul>
 	</div>
 </div>
+
 <div class="col-md-9">	
 	<div class="title">
 		<span class="bg-title"></span>

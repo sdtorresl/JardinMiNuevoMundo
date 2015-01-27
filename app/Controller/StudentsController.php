@@ -39,6 +39,7 @@ class StudentsController extends AppController {
 	public function isAuthorized($user) {
 
 	    if (isset($user['role']) && $user['role'] === 'student') {
+
 	    	// Students can view only your own profile
     		if ($this->action == 'view') {
     			$user_id = $this->request->params['pass']['0'];
@@ -51,7 +52,7 @@ class StudentsController extends AppController {
     			}
     		}
 	    	// Students can register themeselves
-	    	if (in_array($this->action, array('register', 'profile', 'index'))) {
+	    	if (in_array($this->action, array('register', 'profile', 'index', 'download'))) {
 	        	return true;
 	    	}
 	    	else {
@@ -78,9 +79,7 @@ class StudentsController extends AppController {
 	* @return void
 	*/
 	public function view($id = null) {
-		if (!$this->Student->exists($id)) {
-			throw new NotFoundException(__('Estudiante inválido'));
-		}
+
 		if (!$this->Student->isRegistered($id)) {
 			$this->Session->setFlash('Debe registrar el estudiante antes de imprimir');
 			$this->redirect(array('action' => 'register'));
@@ -88,7 +87,6 @@ class StudentsController extends AppController {
 
 		$user_id = $id;
 		$id = $this->Student->getStudentID($user_id);
-
 		$options = array('conditions' => array('Student.' . $this->Student->primaryKey => $id));
 		$this->set('student', $this->Student->find('first', $options));
 		$this->pdfCongig = array(
@@ -98,7 +96,7 @@ class StudentsController extends AppController {
 	}
 
 	/**
-	* registes method
+	* register method
 	*
 	* @return void
 	*/
@@ -175,5 +173,14 @@ class StudentsController extends AppController {
 			$this->Session->setFlash(__('El estudiante no pudo ser borrado. Por favor intente de nuevo.'));
 		}
 		return $this->redirect(array('action' => 'index'));
+	}
+
+	/**
+	 * download method
+	 * 
+	 * @return void
+	 */
+	public function download() {
+
 	}
 }

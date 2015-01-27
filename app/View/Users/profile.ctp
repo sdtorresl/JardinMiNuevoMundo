@@ -2,7 +2,6 @@
 <div class="col-md-3">
 	<div class="lateral-menu">
 		<div class="actions">
-			<h3><?php echo __('Acciones'); ?></h3>
 			<ul class="nav nav-pills nav-stacked">
 			<?php if ($user['User']['role'] == 'admin'): ?>
 				<li>

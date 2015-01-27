@@ -1,10 +1,19 @@
 <div class="col-md-3">
-	<div class="lateral-menu">
-		<h3>Acciones</h3>
-		<ul class="nav nav-pills nav-stacked">
-			<li><?php echo $this->Html->link(__('Mi registro'), array('action' => 'register')); ?> </li>
-			<li><?php echo $this->Html->link(__('Regresar al inicio'), 'http://jardinminuevomundo.com'); ?></li>
-		</ul>
+	<div class="row">
+		<div class="photo col-md-9">
+			<?php echo $this->Html->Image('photo.png', $options = array('photo')); ?>
+			<?php echo __('Tu Foto Aquí'); ?>
+		</div>
+		
+	</div>
+
+	<div class="row">
+		<div class="lateral-menu col-md-9">
+			<ul class="nav nav-pills nav-stacked">
+				<li><?php echo $this->Html->link(__('Mi registro'), array('action' => 'register')); ?> </li>
+				<li><?php echo $this->Html->link(__('Regresar al inicio'), 'http://jardinminuevomundo.com'); ?></li>
+			</ul>
+		</div>
 	</div>
 </div>
 

@@ -520,18 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/View/Layouts/default.ctp",
+			"file": "app/Config/database.php",
 			"settings":
 			{
-				"buffer_size": 1079,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/webroot/css/style.css",
-			"settings":
-			{
-				"buffer_size": 3235,
+				"buffer_size": 257,
 				"line_ending": "Unix"
 			}
 		}
@@ -826,18 +818,12 @@
 	},
 	"expanded_folders":
 	[
-		"/var/www/MiNuevoMundo",
-		"/var/www/MiNuevoMundo/app",
-		"/var/www/MiNuevoMundo/app/View",
-		"/var/www/MiNuevoMundo/app/View/Layouts",
-		"/var/www/MiNuevoMundo/app/webroot",
-		"/var/www/MiNuevoMundo/app/webroot/css",
-		"/var/www/MiNuevoMundo/app/webroot/files",
-		"/var/www/MiNuevoMundo/app/webroot/fonts",
-		"/var/www/MiNuevoMundo/app/webroot/img"
+		"/var/www/JardinMiNuevoMundo"
 	],
 	"file_history":
 	[
+		"/var/www/JardinMiNuevoMundo/app/webroot/css/style.css",
+		"/var/www/JardinMiNuevoMundo/app/View/Layouts/default.ctp",
 		"/var/www/MiNuevoMundo/app/Config/bootstrap.php",
 		"/var/www/MiNuevoMundo/app/View/Layouts/pdf/default.ctp",
 		"/var/www/MiNuevoMundo/app/View/Students/pdf/view.ctp",
@@ -963,9 +949,7 @@
 		"/var/www/exea_video/css/normalize.css",
 		"/var/www/exea_video/index.html",
 		"/tmp/sublime-sftp-browse-1409147887/ema05/etc/liquidsoap/winner.liq",
-		"/home/sergio/Documents/Trabajo/ARL",
-		"/home/sergio/.config/sublime-text-3/Packages/User/sftp_servers/ema05",
-		"/home/sergio/Documents/Tareas Kokoriko"
+		"/home/sergio/Documents/Trabajo/ARL"
 	],
 	"find":
 	{
@@ -1256,24 +1240,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/View/Layouts/default.ctp",
+					"file": "app/Config/database.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1079,
+						"buffer_size": 257,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								714,
-								714
+								225,
+								225
 							]
 						],
 						"settings":
@@ -1281,43 +1265,10 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/webroot/css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3235,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								908,
-								908
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": -0.0,
-						"translation.y": 756.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

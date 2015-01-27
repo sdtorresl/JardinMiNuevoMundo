@@ -1,21 +1,24 @@
 <div class="col-md-3">
-	<div class="lateral-menu">
-		<h3>Acciones</h3>
-		<ul class="nav nav-pills nav-stacked">
-		<?php if ($student['User']['role'] == 'admin'): ?>
-			<li><?php echo $this->Html->link(__('Imprimir'), array('action' => 'view', $student['User']['id'] . '.pdf')); ?>
-			</li>
-			<li><?php echo $this->Html->link(__('Editar Estudiante'), array('action' => 'edit', $student['Student']['id'])); ?> </li>
-			<li><?php echo $this->Form->postLink(__('Borrar Estudiante'), array('action' => 'delete', $student['Student']['id']), array(), __('¿Está seguro que desea borrar al estudiante %s?', $student['Student']['first_name'] . " " . $student['Student']['last_name'])); ?> </li>
-			<li><?php echo $this->Html->link(__('Listar Estudiantes'), array('action' => 'index')); ?> </li>
-			<li><?php echo $this->Html->link(__('Registrar Estudiante'), array('action' => 'register')); ?> </li>
-		<?php else: ?>
-			<li><?php echo $this->Html->link(__('Imprimir'), array('action' => 'view', $student['User']['id'] . '.pdf')); ?>
-			</li>
-			<li><?php echo $this->Html->link(__('Regresar al inicio'), 'http://jardinminuevomundo.com'); ?> </li>
-		<?php endif ?>
-		</ul>
+	<div class="row">
+		<div class="photo col-md-9">
+			<?php echo $this->Html->Image('photo.png', $options = array('photo')); ?>
+			<?php echo __('Tu Foto Aquí'); ?>
+		</div>
+		
 	</div>
+
+	<?php if ($student['User']['role'] == 'admin'): ?>
+	<div class="row">
+		<div class="lateral-menu col-md-9">
+			<ul class="nav nav-pills nav-stacked">
+				<li><?php echo $this->Html->link(__('Editar Estudiante'), array('action' => 'edit', $student['Student']['id'])); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Borrar Estudiante'), array('action' => 'delete', $student['Student']['id']), array(), __('¿Está seguro que desea borrar al estudiante %s?', $student['Student']['first_name'] . " " . $student['Student']['last_name'])); ?> </li>
+				<li><?php echo $this->Html->link(__('Listar Estudiantes'), array('action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('Registrar Estudiante'), array('action' => 'register')); ?> </li>
+			</ul>
+		</div>
+	</div>
+	<?php endif ?>
 </div>
 
 <div class="col-md-9">	
@@ -26,7 +29,20 @@
 	</div>
 
 	<div class="content">
+		
+		<div class="contentMenu">
 		<?php echo $this->Session->flash(); ?>
+			<div class="pull-right">
+				<?php $viewUrl = $this->Html->url(array("controller" => "students", "action" => "view", $student['User']['id'] . '.pdf')); ?>
+				<a href=<?php echo $viewUrl; ?>>
+					<button type="button" class="btn btn-primary btn-sm">
+							<span class="glyphicon glyphicon-print icon" aria-hidden="true"></span> Imprimir
+					</button>
+				</a>
+			</div>
+
+			<div class="clearfix"></div>
+		</div>
 
 		<div class="students">
 			<!-- Student Information -->

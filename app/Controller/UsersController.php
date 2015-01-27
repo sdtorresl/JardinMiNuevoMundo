@@ -19,7 +19,7 @@ class UsersController extends AppController {
 	 */
 	public function isAuthorized($user) {
 		// Only administrator user can add, edit, delete or list other users
-		if (in_array($this->action, array('add', 'edit', 'delete', 'index'))) {
+		if (in_array($this->action, array('add', 'edit', 'delete', 'index', 'admin'))) {
 			if (isset($user['role']) && $user['role'] === 'admin') {
 				return true;
 			}
@@ -55,6 +55,7 @@ class UsersController extends AppController {
 			}
 			$this->Session->setFlash(__('Usuario y/o contraseña inválidos'));
 		}
+		$this->layout = 'login';
 	}
 
 	/**
@@ -67,7 +68,17 @@ class UsersController extends AppController {
 		return $this->redirect($this->Auth->logout());
 	}
 	
-	public function index() {
+	public function list_users() {
+		$this->User->recursive = 0;
+		$this->set('users', $this->paginate());
+	}
+
+	public function list_students() {
+		$this->Student->recursive = 0;
+		$this->set('students', $this->paginate());
+	}
+
+	public function list_teachers() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
 	}
@@ -83,6 +94,11 @@ class UsersController extends AppController {
 	public function profile() {
 		$id = $this->Auth->user('id');
 		$this->view($id);
+	}
+
+	public function admin() {
+		$id = $this->Auth->user('id');
+		$this->set('user', $this->User->read(null, $id));
 	}
 
 	public function add() {

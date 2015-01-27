@@ -1,0 +1,18 @@
+[19-Nov-2014 20:54:51 America/Chicago] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting ')' in /home/jardinmi/public_html/portal/app/Config/database.php on line 8
+[20-Nov-2014 11:39:14 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /home/jardinmi/public_html/portal/app/View/Students/register.ctp on line 6
+[20-Nov-2014 11:39:32 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/jardinmi/public_html/portal/app/View/Students/register.ctp on line 6
+[20-Nov-2014 11:44:04 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE in /home/jardinmi/public_html/portal/app/View/Students/register.ctp on line 5
+[20-Nov-2014 11:44:27 America/Chicago] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting ')' in /home/jardinmi/public_html/portal/app/View/Students/register.ctp on line 5
+[20-Nov-2014 11:45:28 America/Chicago] PHP Parse error:  syntax error, unexpected $end in /home/jardinmi/public_html/portal/app/View/Students/register.ctp on line 5
+[20-Nov-2014 16:15:17 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 15
+[20-Nov-2014 16:15:17 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 15
+[20-Nov-2014 16:16:04 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 13
+[20-Nov-2014 16:16:04 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 13
+[25-Nov-2014 21:26:54 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:26:54 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:27:15 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:27:15 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:27:18 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:27:18 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:29:01 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24
+[25-Nov-2014 21:29:01 America/Chicago] PHP Parse error:  syntax error, unexpected ';' in /home/jardinmi/public_html/portal/app/View/Elements/navigation.ctp on line 24

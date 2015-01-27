@@ -8,7 +8,7 @@ html {
 	height: 100%;
 }
 body {
-	background: url('../img/bg.jpg') center top repeat-y;
+	background: url('../img/bg.png') center top repeat-y;
 	background-size: 100%;
 	font-family: 'Arial Rounded';
 	color: #8BC53F!important;
@@ -17,6 +17,18 @@ body {
 }
 .container {
 	min-height: 95%;
+}
+.container-login {
+	min-height: 70%;
+}
+header.login {
+	background-image: url('../img/bg-login.png');
+	background-size: 100% 150px;
+	height: 150px;
+}
+header, footer {
+	color: #536600;
+	font-size: 0.7em;
 }
 footer {
 	min-height: 5%;
@@ -57,6 +69,9 @@ p, label {
 a {
 	text-decoration: none;
 }
+.icon {
+	color: #536600;
+}
 #flashMessage {
 	margin: 0px 0px 20px 0px;
 	background: #FCFFCD;
@@ -73,10 +88,33 @@ h1 span {
 	position: relative;
 	font-family: Arial
 }
+.photo {
+	text-align: center;
+	margin-top: 25px;
+}
+.photo img {
+	max-width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .row {
 	margin-bottom: 15px;
 }
 .vertical-align {
+	display: flex;
+	align-items: center;
+}
+.vertical-center {
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh; /* These two lines are counted as one :-)       */
+	display: flex;
+	align-items: center;
+}
+.vertical-center-login {
+	min-height: 60%;
+	min-height: 60vh;
 	display: flex;
 	align-items: center;
 }
@@ -96,12 +134,12 @@ h1 span {
 .submit {
 	text-align: right;
 }
-.messages, .content, .lateral-menu, .title {
+.messages, .content, .lateral-menu, .title, .photo {
 	margin-top: 25px;
-	margin-bottom: 25px;
 	border: 1px solid #8BC53F;
 	background: white;
 	padding: 20px;
+	border-radius: 5px;
 }
 .messages {
 	margin: 20px 15px 0px 15px;
@@ -117,8 +155,20 @@ h1 span {
 	height: 120px;
 	width: 110px;
 	background-image: url('../img/avion.png');
-	background-size: 100%;
+	background-size: 100px;
 	background-repeat: no-repeat;
+}
+.bg-login-title {
+	float: left;
+	height: 45px;
+	width: 45px;
+	margin-left: -5px;
+	background-image: url('../img/boy.png');
+	background-size: 45px;
+	background-repeat: no-repeat;
+}
+.bg-title-download {
+	background-image: url('../img/documentos.png');
 }
 .bg-logo {
 	position: absolute;
@@ -142,15 +192,27 @@ h1 span {
 #logo {
 	width: 80px;
 }
+#logo-login {
+	width: 260px;
+}
+.logo-login-container {
+	width: 315px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 .navbar-default {
-	/*background-color: #f8f8f8;*/
-	border-color: #8BC53F;
+	background-color: #F0E8D6;
+	/*border-color: #8BC53F;*/
+}
+.contentMenu {
+	margin-top: -20px;
 }
 /*Bottons*/
 .btn-primary {
 	color: white;
-	background-color: #8BC53F;
-	border-color: #8BC53F;
+	background-color: #A8CF45;
+	border-color: #A8CF45;
 	font-weight: bold;
 }
 .btn-primary a, .btn-primary a:hover {
@@ -158,12 +220,15 @@ h1 span {
 	text-decoration: none;
 }
 .btn-primary:hover {
-	background-color: #38C3CA;	
-	border-color: #38C3CA;
+	background-color: #8BC53F;	
+	border-color: #8BC53F;
 }
 .btn {
 	box-shadow: 2px 2px 2px gray;
 	font-size: 1.2em;
+	font-family: Arial;
+	margin-top: 0px;
+	margin-bottom: 30px;
 }
 .btn-exit {
 	float: right;
@@ -189,6 +254,9 @@ label {
 	margin-left: 2%;
 	margin-right: 2%;
 }
+.checkbox label {
+	padding-left: 0px;
+}
 .error {
 	background-color: #ccc;
 }
@@ -200,5 +268,13 @@ label {
 	.lateral-menu {
 		/*position: fixed;*/
 		/*width: 255px;*/
+	}
+}
+@media (max-width: 1200px) {
+	.photo {
+		display: none;
+	}
+	.title img {
+		display: none;
 	}
 }
